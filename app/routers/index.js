@@ -1,13 +1,16 @@
 import { SwitchNavigator } from 'react-navigation';
-import { OnBoardingStack } from './stackNavigator';
+import { OnBoardingStack, LoginStack , SignInStack , MenuStack} from './stackNavigator';
 import { Drawer } from './drawerNavigator';
 
 export default SwitchNavigator(
   {
     OnBoarding: OnBoardingStack,
-    App: Drawer
+    Login:LoginStack,
+    App: Drawer,
+    Menu: MenuStack,
+    SignIn:SignInStack
   },
   {
-    initialRouteName: 'OnBoarding'
+    initialRouteName: 'Login'
   }
 );

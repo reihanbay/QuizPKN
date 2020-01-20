@@ -90,7 +90,7 @@ export const sky = {
 };
 
 export const teal = {
-  teal_10: '#E4F7F6',
+  teal_10: '#26A69A',
   teal_20: '#A6EDE9',
   teal_30: '#6DD9D2',
   teal_40: '#45BFB7',

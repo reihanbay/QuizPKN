@@ -1,6 +1,8 @@
 /* eslint-disable global-require */
 const images = {
-  // back: require('../../assets/images/back.png'),
+  lock: require('../../assets/images/lock.png'),
+  user: require('../../assets/images/p.png'),
+  logo: require('../../assets/images/logo.png')
   // checkBoxOn: require('../../assets/images/checkbox_on.png'),
   // checkBoxOff: require('../../assets/images/checkbox_off.png'),
   // close: require('../../assets/images/close.png'),

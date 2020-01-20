@@ -1,7 +1,7 @@
 /* global fetch:false */
 
 export const config = {
-  baseUrl: 'https://reqres.in/api'
+  baseUrl: 'http://34.238.41.114:8080'
 };
 
 export const STATUS_CODE = {

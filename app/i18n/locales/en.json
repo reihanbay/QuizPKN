@@ -4,21 +4,28 @@
   "checkConnection": "No internet connection found. \nCheck your connection.",
   "country": "country",
   "email": "Email",
+  "dontHave": "Don't Have Account ?",
+  "Have":"Sudah Punya Akun ?",
+  "signIn":"Masuk",
   "error": {
     "timeOutConnection": "Connection timeout. Please try again later."
   },
   "gallery": "Gallery",
   "loading": "Loading ...",
+  "login": "login",
   "oops": "Oops!",
   "password": "Password",
+  "confPassword": "Re-type Password",
   "phoneNumber": "Phone number",
   "pleaseTryAgain": "Please try again",
   "rememberMe": "Remember me",
+  "signUp": "Sign Up",
   "selectDate": "Select Date : ",
   "selectFrom": "Select From : ",
   "submit": "Submit",
   "tryAgain": "Try again",
   "update": "Update",
+  "username": "username",
   "updateBody": "Please update the application to the new version, \n to get the new contents",
   "updateTitle": "Update"
 }

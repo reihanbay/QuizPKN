@@ -1,0 +1,211 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-i18n] D:\File\jajal\codebase-mobile-master\node_modules\react-native-i18n\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-47:12
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\b5e61987da52d7981b0a45be98922121\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c811d9f4a78e4bc81db15ad1e122fd54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\604a5e413bdc78850327e5b05f6b240f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b8ffcd38fbe4d290c2c89a87e82b9940\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a81ff7e1ef026ea16d1dacb1c496ca05\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\104e2749ab1dd0f52d71f7f096d78f57\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\6ea733d174ea56e23144d41b1b1836f6\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\c1f09da19f3246faddc886c5be919b2c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\0b9015c0db487069dbff19cfd9c6a35f\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\fd24aaadfc96deab21cd95d52126f595\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\5cd4af6a9bf13fcb4163678f173fa904\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\e504b1c936d02a6d18a0f77f8a057284\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\acdca09d494758225c6cf6db8932d64b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\44dd799a90f3475c78efc70e8384aae7\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5770bdefa84ce8a24ee7045260c5728e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\47e8244278d91787ab7620aee7f2f858\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\021b40535042bdb0c1c8da8278f5c6be\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\90d571516ca07ca7bb776c9a21ea05a9\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+	package
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:2:5-28
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:5:22-75
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:7:5-81
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:8:5-88
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:8:22-85
+application
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:10:5-27:19
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\0b9015c0db487069dbff19cfd9c6a35f\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\0b9015c0db487069dbff19cfd9c6a35f\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\fd24aaadfc96deab21cd95d52126f595\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\fd24aaadfc96deab21cd95d52126f595\AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:12:7-39
+	android:icon
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:13:7-41
+	android:allowBackup
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:14:7-34
+	android:theme
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:15:7-38
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:11:7-38
+activity#com.component.MainActivity
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:16:7-25:18
+	android:label
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:18:9-41
+	android:windowSoftInputMode
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:20:9-51
+	android:configChanges
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:19:9-79
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:17:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:21:9-24:25
+action#android.intent.action.MAIN
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:22:13-65
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:22:21-62
+category#android.intent.category.LAUNCHER
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:23:13-73
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:23:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:26:7-84
+	android:name
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:26:17-81
+uses-sdk
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-i18n] D:\File\jajal\codebase-mobile-master\node_modules\react-native-i18n\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-i18n] D:\File\jajal\codebase-mobile-master\node_modules\react-native-i18n\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\b5e61987da52d7981b0a45be98922121\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\b5e61987da52d7981b0a45be98922121\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c811d9f4a78e4bc81db15ad1e122fd54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c811d9f4a78e4bc81db15ad1e122fd54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\604a5e413bdc78850327e5b05f6b240f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\604a5e413bdc78850327e5b05f6b240f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b8ffcd38fbe4d290c2c89a87e82b9940\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b8ffcd38fbe4d290c2c89a87e82b9940\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a81ff7e1ef026ea16d1dacb1c496ca05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\a81ff7e1ef026ea16d1dacb1c496ca05\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\104e2749ab1dd0f52d71f7f096d78f57\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\104e2749ab1dd0f52d71f7f096d78f57\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\6ea733d174ea56e23144d41b1b1836f6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\6ea733d174ea56e23144d41b1b1836f6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\c1f09da19f3246faddc886c5be919b2c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\c1f09da19f3246faddc886c5be919b2c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\0b9015c0db487069dbff19cfd9c6a35f\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\0b9015c0db487069dbff19cfd9c6a35f\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\5cd4af6a9bf13fcb4163678f173fa904\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\5cd4af6a9bf13fcb4163678f173fa904\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\e504b1c936d02a6d18a0f77f8a057284\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\e504b1c936d02a6d18a0f77f8a057284\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\acdca09d494758225c6cf6db8932d64b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\acdca09d494758225c6cf6db8932d64b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\44dd799a90f3475c78efc70e8384aae7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\44dd799a90f3475c78efc70e8384aae7\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5770bdefa84ce8a24ee7045260c5728e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5770bdefa84ce8a24ee7045260c5728e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\47e8244278d91787ab7620aee7f2f858\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\47e8244278d91787ab7620aee7f2f858\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\021b40535042bdb0c1c8da8278f5c6be\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\021b40535042bdb0c1c8da8278f5c6be\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\90d571516ca07ca7bb776c9a21ea05a9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\90d571516ca07ca7bb776c9a21ea05a9\AndroidManifest.xml:20:5-44
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:30:22-73
+provider#android.support.v4.content.FileProvider
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:37:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:13-43:58
+	android:resource
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:43:17-55
+	android:name
+		ADDED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:42:17-67
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

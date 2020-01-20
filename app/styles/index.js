@@ -6,8 +6,8 @@ import { gray, teal, red, black, white } from './colors';
 
 export const COLOR_BASE_PRIMARY_DARK = teal.teal_70;
 export const COLOR_BASE_PRIMARY_MAIN = teal.teal_50;
-export const COLOR_BASE_PRIMARY_LIGHT = teal.teal_30;
-
+export const COLOR_BASE_PRIMARY_LIGHT = teal.teal_10;
+export const COLOR_LINE = '#29293E';
 export const COLOR_BASE_SECONDARY_DARK = '#ba000d';
 export const COLOR_BASE_SECONDARY_MAIN = '#f44336';
 export const COLOR_BASE_SECONDARY_LIGHT = '#ff7961';
