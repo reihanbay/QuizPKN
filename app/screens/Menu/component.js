@@ -13,18 +13,15 @@ export default class Component extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false,
-      showPass: true,
-      username: '',
-      password: '',
-      disableButton: true
+      // checked: false,
+      // showPass: true,
+      // username: '',
+      // password: '',
+      // disableButton: true
     };
   }
   _handleLogin = async () => {
     this.props.navigation.navigate('Home');
-  };
-  _handleRegister = async () => {
-    this.props.navigation.navigate('Register');
   };
   // _handleLogin = async () => {
   //   const { username, password } = this.state;
@@ -36,12 +33,6 @@ export default class Component extends React.Component {
   //   await ENDPOINT.login(params);
   //   this.props.navigation.navigate('Home');
   // };
-  _handleCheckbox = () => {
-    this.setState({ checked: !this.state.checked });
-  };
-  _handleShowPass = () => {
-    this.setState({ showPass: !this.state.showPass });
-  };
   _handleUsername = async text => {
     await this.setState({ username: text });
     this.checkField();

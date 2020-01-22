@@ -11,6 +11,6 @@ export default SwitchNavigator(
     SignIn:SignInStack
   },
   {
-    initialRouteName: 'Login'
+    initialRouteName: 'Menu'
   }
 );
