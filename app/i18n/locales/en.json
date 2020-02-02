@@ -7,6 +7,15 @@
   "dontHave": "Don't Have Account ?",
   "Have":"Sudah Punya Akun ?",
   "signIn":"Masuk",
+  "menu":{
+    "exam":"Exam",
+    "course":{
+      "text":"Course",
+      "vid":"Video"
+    },
+    "Quiz": "Quiz",
+    "AboutUs": "About Us"
+  },
   "error": {
     "timeOutConnection": "Connection timeout. Please try again later."
   },

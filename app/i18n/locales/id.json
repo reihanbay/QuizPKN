@@ -10,6 +10,24 @@
   "signUp": "Daftar",
   "Have":"Sudah Punya Akun ?",
   "signIn":"Masuk",
+  "menu":{
+    "exam":"Latihan Soal",
+    "course":{
+      "text":"Materi",
+      "vid":"Video"
+    },
+    "quiz": "Quiz",
+    "aboutUs": "Tentang Kita"
+  },
+  "HAM": "Hak Asasi Manusia",
+  "course1": "Pengertian Hak Asasi Manusia",
+  "course2":"Macam-Macam HAM",
+  "course3":"Perkembangan HAM di Indonesia",
+  "course4":"Pengertian Pancasila",
+  "course5":"Pancasila sebagai sumber nilai",
+  "course6":"Hubungan HAM dengan Pancasila",
+
+  "Learn": "Pelajari",
   "error" : {
     "timeOutConnection": "Koneksi timeout. silahkan coba beberapa saat lagi."
   },
@@ -27,5 +45,83 @@
   "username": "Nama Pengguna",
   "update": "Perbarui",
   "updateBody": "Harap perbarui aplikasi ke versi baru, \n untuk mendapatkan konten-konten terbaru",
-  "updateTitle": "Perbarui"  
+  "updateTitle": "Perbarui" , 
+  "judulMateri1": "Pengertian Hak Asasi Manusia",
+  "isiMateri1":{
+    "desc":"Ada berbagai versi definisi mengenai HAM. Setiap definisi menekankan pada segi-segi tertentu dari HAM. Berikut beberapa definisi tersebut. Adapun beberapa definisi Hak Asasi Manusia (HAM) adalah sebagai berikut:",
+    "sectionTitle1": "Undang-Undang Nomor 39 tahun 1999",
+    "section1": "Menurut Undang-Undang Nomor 39 tahun 1999 HAM adalah seperangkat hak yang melekat pada hakikat keberadaan manusia sebagai makhluk Tuhan Yang Maha Esa. Hak itu merupakan anugerah-Nya yang wajib dihormati, dijunjung tinggi, dan dilindungi oleh Negara, hukum, pemerintah, dan setiap orang demi kehormatan serta perlindungan harkat dan martabat manusia",
+    "sectionTitle2": "Oemar Seno Aji",
+    "section2": "HAM adalah hak yang melekat pada martabat manusia sebagai insan ciptaan Tuhan Yang Maha Esa yang sifatnya tidak boleh dilanggar oleh siapapun, dan yang seolah-olah merupakan suatu holy area",
+    "sectionTitle3": "Kuncoro",
+    "section3": "HAM adalah hak yang dimiliki manusia menurut kodratnya dan tidak dapat dipisahkan dari hakekatnya",
+    "sectionTitle4": "G.J.Wollhof",
+    "section4": "HAM adalah sejumlah hak yang berakat pada tabi’at setiap pribadi manusia, dan tidak dapat dicabut oleh siapapun",
+    "sectionTitle5": "Miriam Budiardjo",
+    "section5": "Miriam Budiardjo membatasi pengertian hak-hak asasi manusia sebagai hak yang dimiliki manusia yang telah diperoleh dan dibawanya bersamaan dengan kelahiran atau kehadirannya di dalam masyarakat",
+    "conclude": "kesimpulan Hak Asasi Manusia (HAM) adalah seperangkat hak yang melekat pada hakikat dan keberadaan manusia sebagai makhluk Tuhan Yang Maha Kuasa dan merupakan anugerah-Nya yang wajib dihormati, dijunjung tinggi dan dilindungi oleh negara, hukum, Pemerintah dan setiap orang, demi kehormatan serta perlindungan harkat dan martabat manusia \n (Pasal 1 angka 1 UU No. 39 Tahun 1999 tentang HAM dan UU No. 26 Tahun 2000 tentang Pengadilan HAM)"
+  },
+  "judulMateri2": "Macam Hak Asasi Manusia",
+  "isiMateri2":{
+    "desc":"Secara garis besar hak-hak asasi manusia dapat digolongkan menjadi 6 macam sebagai berikut: ",
+    "section1":"a.Hak-hak ekonomi (property right) hak untuk memiliki sesuatu, membeli atau menjual serta memanfaatkannya. ",
+    "section2":"b.Hak-hak asasi untuk mendapatkan perlakuan yang sama dalam hukum dan pemerintahan atau (Right of legal Equality).",
+    "section3":"c.Hak-hak asasi politik (Political right)yaitu hak untuk ikut serta dalam pemerintahan. ",
+    "section4":"d.Hak-hak asasi sosial dan budaya(social and culture right)misalnya hak untuk memilih pendidikan. ",
+    "section5":"e.Hak-hak asasi untuk mendapatkan perlakuan tata cara peradilan dan perlindungan(procedura rights)peratuaran dalam hal penangkapan."
+   },
+  "judulMateri3": "Perkembangan HAM di Indonesia",
+  "isiMateri3":{
+   "desc":"Pemahaman HAM di Indonesia sebagai tatanan nilai, norma, sikap yang hidup di masyarakat dan acuan bertindak pada dasarnya berlangsung sudah cukup lama. Secara garis besar Prof. Bagir Manan pada bukunya Perkembangan Pemikiran dan Pengaturan HAM di Indonesia ( 2001 ), membagi perkembangan HAM pemikiran HAM di Indonesia dalam dua periode yaitu periode sebelum Kemerdekaan ( 1908-1945 ), periode setelah Kemerdekaan ( 1945 – sekarang )"
+  },
+  "judulMateri4": "Pengertian Pancasila",
+  "isiMateri4":{
+    "section1":"Secara arti kata pancasila mengandung arti, panca yang berarti “lima” dan sila yang berarti “dasar”. Dengan demikian pancasila artinya lima dasar. Sejarah telah mengungkapkan bahwa Pancasila adalah jiwa seluruh rakyat Indonesia, yang memberi kekuatan hidup kepada bangsa Indonesia serta membimbingnya dalam mengejar kehidupan lahir batin yang makin baik, di dalam masyarakat Indonesia yang adil dan makmur. Sifat dari pancasila adalah imperative atau memaksa, siapa saja yang berada diwilayah NKRI, wajib mentaati pancasila serta mengamalkan dengan tanpa persyaratan. Pancasila adalah pandangan hidup bangsa dan dasar negara Republik Indonesia. Pancasila juga merupakan sumber kejiwaan masyarakat dan negara Republik Indonesia. Maka manusia Indonesia menjadikan pengamalan Pancasila sebagai perjuangan utama dalam kehidupan kemasyarakatan dan kehidupan kenegaraan.",
+    "section2":"Hak Asasi Manusia (HAM) Dalam Pancasila Hak-hak asasi manusia dalam Pancasila dirumuskan dalam pembukaan UUD 1945 dan terperinci di dalam batang tubuh UUD 1945 yang merupakan hukum dasar konstitusional dan fundamental tentang dasar filsafat negara Republik Indonesia serat pedoman hidup bangsa Indonesia, terdapat pula ajaran pokok warga negara Indonesia. Yang pertama ialah perumusan ayat ke 1 pembukaan UUD tentang hak kemerdekaan yang dimiliki oleh segala bangsa didunia. Oleh sebab itu penjajahan di atas dunia harus dihapuskan karena tidak sesuai dengan perikemanusiaan dan perikeadilan.",
+    "section3":"Kebulatan lima dasar dalam Pancasila, mengemukakan Pancasila seperti dikemukakan Notonegoro dalam Pidato Dies Universitas Airlangga pada 10 Nopember 1955 secara filsafat kenegaraan, dan istilah “Pancasila” oleh Dr. Sumantri Harjoprakoso dalam “Indonesisch mensbeeld als basis ener psychotherapie” (Leiden, Juni 1956) yang juga digunakan dalam bidang kebatinan yang menyebut lima tabiat manusia guna mencapai pendirian hidup sempurna, yaitu: 1. Rela, 2. Narimo (Jawa), 3. Temen (Jujur), 4. Sabar, dan 5. Budi luhur. Lima tabiat ini agar dapat melaksanakan sandaran hidup yang dinamakannya “Tri Sila” yakni: a. eling (beriman), b. percaya dan c. mituhu (setia). “Pancasila” juga dikemukakan Prof. Dr. Priyono, Menteri PP dan KK pada Seminar Ilmu dan Kebudayaan di Yogyakarta (29 Juni 1956) sebagai “Panca Sila” Bahasa Indonesia."
+  },
+  "judulMateri5": "Pancasila sebagai sumber nilai",
+  "isiMateri5":{
+    "desc":"Dalam Pancasila terkandung tiga Nilai sebagai berikut :",
+    "sectionTitle1":"1)Nilai Dasar",
+    "section1":"adalah asas-asas yang berasal dari nilai budaya bangsa Indonesia yang bersifat abstrak dan umum, relatif tidak berubah namun maknanya selalu dapat disesuaikan dengan perkembangan zaman.  Artinya nilai dasar itu bisa terus menerus ditafsirkan ulang baik makna maupun implikasinya.  Melalui penafsiran ulang itulah akan didapat nilai baru yang lebih operasional sesuai dengan tantangan zaman.  Adapun nilai dasar yang terkandung dalam Pancasila adalah Ketuhanan, kemanusiaan, Persatuan, Kerakyatan, dan Keadilan.",
+    "sectionTitle2":"2)Nilai Instrumental",
+    "section2":"Nilai berlaku untuk kurun waktu dan kondisi tertentu, lebih bersifat kontekstual (menyesuaikan dengan perkembangan zaman), wujudnya berupa kebijakan/peraturan, strategi, program, organisasi, sistem, rencana. Seperti UUD 1945, Tap MPR, UU No.  40 tahun 1999 tentang Pers, UU No. 2 Tahun 1999 tentang partai politik, UU No. 39 Tahun 1999 tentang HAM, dll.",
+    "sectionTitle3":"3)Nilai Praksis",
+    "section3":"Adalah nilai  yang dilaksanakan dalam kenyataan hidup sehari-hari yang menandakan apakah nilai dasar atau instrumental masih hidup di tengah masyarakat, berbangsa dan bernegara.  Contoh nilai praksis seperti saling menghormati, toleransi, kerja sama, kerukunan, bergotong royong, menghargai, dan lain-lain. Nilai ini sifatnya dinamis, penerapan nilai-nilai dalam kenyataan sehari-hari baik oleh lembaga kenegaraan/organisasi dan warga negara",
+    "section4":"Nilai-nilai yang terkandung dalam Pancasila:",
+    "subSection4a":"a.Nilai Ketuhanan, mengandung arti pengakuan dan keyakinan terhadap Tuhan YME sebagai pencipta alam semesta.",
+    "subSection4b":"b.Nilai Kemanusiaan, mengandung arti kesadaran akan sikap/perilaku sesuai dengan nilai moral dan penghormatan HAM.",
+    "subSection4c":"c.Nilai Persatuan, mengandung arti kesadaran untuk membina persatuan dengan semangat Bhinneka Tunggal Ika.",
+    "subSection4d":"d.Nilai Kerakyatan, mengandung arti mengembangkan musyawarah mufakat dan nilai-nilai demokrasi.",
+    "subSection4e":"e.Nilai Keadilan, mengandung arti kesadaran bersama mewujudkan keadilan bagi diri dan sesama manusia.",
+    "section5":"Contoh perbuatan yang menunjukan pengamalan nilai-nilai Pancasila.",
+    "subSection5a":"1)Menghindari diskriminasi dalam pergaulan.",
+    "subSection5b":"2)Membantu teman yang terkena musibah atau bencana.",
+    "subSection5c":"3)Melakukan donor darah.",
+    "subSection5d":"4)Menghargai hak dan kewajiban orang lain."
+  }, 
+  "judulMateri6": "Hubungan HAM dengan Pancasila",
+  "isiMateri6":{
+    "sectionTitle1":"Ketuhanan Yang Maha Esa",
+    "section1a" : "Dalam sila Ketuhanan Yang Maha Esa, mengandung pengakuan terhadap Tuhan dan sebagai relasi akan setiap orang untuk mendapat perlindungan dalam memeluk agama. Setiap warga negara diberi kebebasan sebebas-bebasnya untuk melakuakan kegiatan peribadatan agama yang dipeluknya. Akan tetapi, ada batasan terhadap setiap warga yaitu tak ada paksaan dari golongan atau perseorangan tehadap orang lain dalam memeluk agama tertentu dan melakukan propaganda anti agama.",
+    "sectionTitle2" :"Kemanusiaan yang adil dan beradab",
+    "section2a" : "Kemanusiaan berasal dari kata manusia, yaitu mahluk berbudi yang memiliki potensi pikir,rasa, karsa, dan cipta. Kemanusiaan terutama berarti sifat manusia yang merupakan esensi dan identitas manusia karena martabat kemanusiaannya  (humandignity). Adil terutama mengandung arti bahwa suatu keputusan dan tindakan didasarkan atas norma-norma yang objektif jadi, tidak subjektif apalagi sewenang-wenang.",
+    "section2b" : "Beradab berasal darikata adab yang berarti budaya. Jadi, beradab berarti berbudaya. Ini mengandung arti bahwa sikap hidup, keputusan, dan tindakan selalu berdasarkan nila-nilai budaya,terutama norma sosial dan kesusilaan (moral). Adab terutama mengandung pengertian tata kesopanan, kesusilaan atau moral.  Dengan demikian, bearadab dapat ditafsirkan sebagaiberdasar nilai-nilai kesusilaan atau moralitas khususnya dan kebudayaan umumnya.",
+    "section2c" : "Jadi, Kemanusiaan Yang Adil dan Beradab adalah kesadaran sikap dan perbuatan mausia yang didasarkan kepadapotensi budi nurani manusia dalam hubungan dengan norma-norma dan  kebudayaan umumnya, baik terhadap diri pribadi, sesama manusia, maupun terhadap alam dan hewan. Karena dengan kerukunan dan saling bersosial terhadap sesama, kita akan menjadi makhlukyangadil.Pada prinsipnya Kemanusiaan Yang Adil dan Beradab adalah sikap dan perbuatan manusia yang sesuai dengan kodrat hakikat manusia yang berbudi, sadar, dan berbudaya.",
+    "section2d" : "Di dalam sila ke II “Kemanusiaan Yang Adil dan Beradab” telah tersimpul cita-cita kemanusiaan yang lengkap, yang memenuhi seluruh hakikat manusia. Kemanusiaan Yang Adil dan Beradab adalah suatu rumusan sifat keluhuran budi manusia (Indonesia). Dengan Kemanusiaan Yang Adil dan Beradab, maka setiap warga Negara mempunyai kedudukan yang sederajat dan sama-sama terhadap Undang-Undang Negara, mempunyai hak dan kewajiban yang sama. Setiap warga Negara dijamin haknya serta kebebasannya yang menyangkut hubungan dengan Tuhan, dengan orang-orang seorang, dengan Negara, dengan masyarakat, dan menyangkut pula kemerdekaan menyatakan pendapat dan mencapai kehidupan yang layak sesuai dengan hak asasi manusia.",
+    "sectionTitle3" :"Persatuan Indonesia",
+    "section3a" : "Bentuk nyata pengamalan sila ketiga Pancasila yang dapat kita lakukan untuk memperkukuh persatuan dan kesatuan bangsa Indonesia adalah dengan menjunjung tinggi bahasa persatuanbangsa Indonesia. Mengamalkan sila ketiga Pancasila dengan berbahasa Indonesia secara baik dan benar, maksudnya adalah kita selalu konsisten untuk menggunakan bahasa Indonesia sesuai dengan situasi pemakaian dan sesuai dengan kaidah kebahasaan dalam bahasa Indonesia. Bangsa Indonesia sudah bersatu padu sejak tanggal 28 Oktober 1928 silam. DenganSumpahPemuda yang terjadi pada tanggal 28 Oktober 1928 tersebut, terbentuklah bangsa Indonesia yang lebih kuat daripada sebelumnya yang masih tercerai-berai.",
+    "section3b" : "Salah satu unsur penyatu bangsa kitaadalah penggunaan bahasa Indonesia sebagai bahasa persatuan bangsa kita.Darisabang sampai Marauke seluruh warga negara Indonesia dapat berkomunikasiantarbudaya, antarsuku, danantaragama satu sama lain dengan menggunakan bahasa Indonesia. Hal ini membuktikan bahwadengan menggunakan bahasa Indonesa, kita dapat memperkukuh persatuan dan kesatuan bangsakita. Dengan kata lain, menggunakan bahasa Indonesia adalah bentuk nyata pengamalan kitaterhadap sila ketiga Pancasila.",
+    "section3c" : "Jadi,sebenarnya dengan berbahasa Indonesia, kita sudah mengamalkan sila ketiga Pancasila. Bentuk pengamalan ini berarti, dengan berbahasa Indonesia, kita sudah berusaha memperkukuh persatuan dan kesatuan bangsa kita dan sekaligus kita sudah ikut membangun bangsa ini ke arah kemajuan dengan salah satu landasan tujuan negara untuk melindungi segenap bangsa dan seluruh tumpah darah Indonesia dan juga memahami segala bentuk paham antar golongan maupun perseorangan yang berbeda sehingga tercipta suatu keharmonisan dalam masyarakat melalui Bahasa Indonesia.",
+    "sectionTitle4" :"Kerakyatan yang dipimpin oleh hikmad kebijaksanaan dalam permusyawaratan perwakilan",
+    "section4a" : "Hakikat sila ini adalah demokrasi dan demokrasi merupakan salah satu bentuk dalam menghargai Hak Asasi Manusia. Demokrasi dalam arti umum yaitu pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat. Secara sederhana, demokrasi yang dimaksud adalah melibatkan segenap bangsa dalam pemerintahan baik yang tergabung dalam pemerintahan dan kemudian adalah peran rakyat yang diutamakan.",
+    "section4b" : "Pemusyawaratan. Artinya mengusahakan putusan secara bulat, dan sesudah itu diadakan tindakan bersama. Disini terjadi simpul yang penting yaitu mengusahakan keputusan secara bulat. Bulat yang dimaksud adalah hasil yang mufakat, artinya keputusan itu diambil dengan kesepakatan bersama. Dalam melaksanakan keputusan diperlukan kejujuran bersama. Dalam hal ini perlu diingat bahwa keputusan bersama dilakukan secara bulat sehingga membawa konsekuensi adanya kejujuran bersama. Perbedaan secara umum demokrasi di barat dan di Indonesia yaitu terletak pada permusyawaratan. Permusyawaratan diusahakan agar dapat menghasilkan keputusan-keputusan yang diambil secara bulat.",
+    "section4c" : "Hal ini tidak menjadi kebiasaan bangsa Indonesia, bagi kita apabila pengambilan keputusan secara bulat itu tidak bisa tercapai dengan mudah, baru diadakan pemungutan suara. Kebijaksanaan ini merupakan suatu prinsip bahwa yang diputuskan itu memang bermanfaat bagi kepentingan rakyat banyak. Jika demokrasi diartikan sebagai kekuatan, maka kekuatan terbesar dalam suatu Negara berada di tangan rakyat.",
+    "section4d" : "Secara sederhana, pembahasan sila ke 4 adalah demokrasi. Demokrasi yang mana dipimpin oleh hikmat kebijaksanaan. Pemimpin yang hikmat adalah pemimpin yang berakal sehat, rasional, cerdas, terampil,atau yang bersifatjamanisementara kebijaksanaan adalah pemimpin yang berhatinurani, arif, bijaksana, jujur, adil, atau yang bersifatrihani. Jadi, pemimpin yang hikmat-kebijaksanaan itu lebih mengarah pada pemimpin yang profesional (hikmat) dan juga dewasa(bijaksana). Itu semuanegara demokratis yang dipimpin oleh orang yangsepertiitudilakukan melalui tatanan dan tuntunan permusyawaratan/perwakilan. Tegasnya, sila keempat menunjuk pada NKRI sebagai Negara demokrasi-perwakilan yang dipimpin oleh orang yang hikmat dan bijaksana melalui suatu sistem musyawarah.",
+    "sectionTitle5" :"Keadilan sosial bagi seluruh rakyat Indonesia",
+    "section5a" : "Keadilan sosial ialah suatu masyarakat atau sifat suatu masyarakat adil dan makmur, berbahagia buat semua orang, tidak ada penghinaan, tidak ada penindasan, tidak ada penindasan, tidak ada penghisapan. Tidak ada – sebagai yang saya katakan di dalam kuliah umum beberapa bulan yang lalu – exploitation de l’homme par l’homme",
+    "section5b" : "Pemikiran Bung Karno tentang keadilan sosial ini sungguh jelas, tepat, sistematis dan tegas. Tampak sekali bahwa Seoekarno sangat memprioritaskan nilai keadilan dan  menjunjung tinggi nilai hak-hak asasi manusia dalam konsep hidup berbangsa dan bernegara. Sudah tentu, lahirnya gagasan tentang definisi keadilan sosial ini merupakan hasil refleksi Soekarno tentang masa gelap sejarah bangsa Indonesia. Bangsa Indonesia telah mengalami penderitaan, penindasan, penghinaan dan penghisapan oleh penjajahan Belanda dan Jepang. Pernyataan teks di atas membuktikan bahwa Soekarno ingin mencanangkan keadilan sosial sebagai warisan dan etika bangsa Indonesia yang harus diraih.",
+    "section5c" : "Di dalam bentuk keadilan sosial setiap orang berhak atas “kebutuhan manusia yang mendasar” tanpa memandang perbedaan “buatan manusia” seperti ekonomi, kelas, ras, etnis, agama, umur, dan sebagainya. Untuk mencapai itu antara lain harus dilakukan penghapusan diskriminasi sebagai bentuk penghargaan terhadap Hak Asasi Manusia dan dengan demikian warga negara Indonesia dapat hidup layak, adil dan tentram di dalam Negara Indonesia."
+   }
 }

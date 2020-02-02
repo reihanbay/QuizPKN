@@ -6,72 +6,60 @@ import styles from './styles';
 import images from '../../configs/images';
 import I18n from '../../i18n';
 import StatusBar from '../../components/elements/StatusBar';
-import Button from '../../components/elements/btnMenu';
+import Button from '../../components/elements/Button';
 // import { ENDPOINT } from '../../configs';
 
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      // checked: false,
-      // showPass: true,
-      // username: '',
-      // password: '',
-      // disableButton: true
-    };
+    this.state = {};
   }
-  _handleLogin = async () => {
-    this.props.navigation.navigate('Home');
+  _handleCourse = async () => {
+    this.props.navigation.navigate('Course');
   };
-  // _handleLogin = async () => {
-  //   const { username, password } = this.state;
-  //   const params = {
-  //     username,
-  //     password,
-  //     gate: 'app-agree'
-  //   };
-  //   await ENDPOINT.login(params);
-  //   this.props.navigation.navigate('Home');
-  // };
-  _handleUsername = async text => {
-    await this.setState({ username: text });
-    this.checkField();
+  _handleExam = async () => {
+    this.props.navigation.navigate('Exam');
   };
-  _handlePassword = async text => {
-    await this.setState({ password: text });
-    this.checkField();
+  _handleQuiz = async () => {
+    this.props.navigation.navigate('Quiz');
   };
-  checkField() {
-    const { username, password } = this.state;
-    if (username === '' || password === '') {
-      this.setState({ disableButton: true });
-    } else {
-      this.setState({ disableButton: false });
-    }
-  }
+  _handleAbout = async () => {
+    this.props.navigation.navigate('About');
+  };
+
   render() {
     return (
       <MainScreen style={styles.container}>
         <StatusBar />
         <Image source={images.logo} style={styles.logo} />
         <Button
-          onPress={this._handleLogin}
+          onPress={this._handleCourse}
           customContainer={styles.button}
-          title={I18n.t('signUp')}
-          disabled={this.state.disableButton}
-        />
-        {/* <Button
-          onPress={this._handleLogin}
-          customContainer={styles.button}
-          title={I18n.t('signUp')}
-          disabled={this.state.disableButton}
+          customText={styles.text}
+          title={I18n.t('menu.course.text')}
+          isUpperCase={false}
         />
         <Button
-          onPress={this._handleLogin}
+          onPress={this._handleExam}
           customContainer={styles.button}
-          title={I18n.t('signUp')}
-          disabled={this.state.disableButton}
-        /> */}
+          customText={styles.text}
+          title={I18n.t('menu.exam')}
+          isUpperCase={false}
+        />
+        <Button
+          onPress={this._handleQuiz}
+          customContainer={styles.button}
+          customText={styles.text}
+          title={I18n.t('menu.quiz')}
+          isUpperCase={false}
+        />
+        <Button
+          onPress={this._handleAbout}
+          customContainer={styles.button}
+          customText={styles.text}
+          title={I18n.t('menu.aboutUs')}
+          isUpperCase={false}
+        />
       </MainScreen>
     );
   }

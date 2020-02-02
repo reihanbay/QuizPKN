@@ -57,12 +57,12 @@ export default class Component extends React.Component {
       this.setState({ isLoading: false });
     }
   };
-  _handleCheckbox = () => {
-    this.setState({ checked: !this.state.checked });
-  };
-  _handleShowPass = () => {
-    this.setState({ showPass: !this.state.showPass });
-  };
+  // _handleCheckbox = () => {
+  //   this.setState({ checked: !this.state.checked });
+  // };
+  // _handleShowPass = () => {
+  //   this.setState({ showPass: !this.state.showPass });
+  // };
   _handleUsername = async text => {
     await this.setState({ email: text });
     this.checkField();

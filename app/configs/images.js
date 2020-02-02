@@ -1,5 +1,10 @@
 /* eslint-disable global-require */
 const images = {
+  bg: {
+    bg2: require('../../assets/images/bg2.png'),
+    bgCourse: require('../../assets/images/bgCourse.png')
+  },
+  card: require('../../assets/images/card.png'),
   lock: require('../../assets/images/lock.png'),
   user: require('../../assets/images/p.png'),
   logo: require('../../assets/images/logo.png')
