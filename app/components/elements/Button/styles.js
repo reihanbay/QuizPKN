@@ -1,19 +1,19 @@
 import { StyleSheet } from 'react-native';
 
 import {
-  COLOR_BASE_PRIMARY_MAIN,
   COLOR_BASE_PRIMARY_LIGHT,
   COLOR_BASE_PRIMARY_DARK,
   COLOR_FONT_PRIMARY_LIGHT,
-  COLOR_WHITE
+  COLOR_WHITE,
+  COLOR_GREY
 } from '../../../styles';
 
 const container = {
-  width: 225,
-  height: 60,
+  width: 300,
+  height: 50,
   justifyContent: 'center',
   alignItems: 'center',
-  borderRadius: 70
+  borderRadius: 10
 };
 
 export default StyleSheet.create({
@@ -23,7 +23,7 @@ export default StyleSheet.create({
   },
   containerDisabled: {
     ...container,
-    backgroundColor: COLOR_FONT_PRIMARY_LIGHT
+    backgroundColor: COLOR_GREY
   },
   containerFlat: {
     ...container,
@@ -35,12 +35,12 @@ export default StyleSheet.create({
   },
   text: {
     color: COLOR_WHITE,
-    fontWeight: '500',
-    fontSize: 20
+    fontWeight: '400',
+    fontSize: 16
   },
   textDisabled: {
     color: COLOR_WHITE,
-    fontSize: 20
+    fontSize: 16
   },
   textPressed: {
     color: COLOR_FONT_PRIMARY_LIGHT
@@ -52,5 +52,7 @@ export default StyleSheet.create({
     ...container,
     backgroundColor: COLOR_BASE_PRIMARY_DARK
   },
-  buttonDisabled: {}
+  buttonDisabled: {
+    backgroundColor: COLOR_GREY
+  }
 });

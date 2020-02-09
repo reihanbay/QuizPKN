@@ -27,22 +27,18 @@ const styles = StyleSheet.create({
   },
   // eslint-disable-next-line react-native/no-color-literals
   titleText: {
-    fontSize: 24,
-    color: '#4994B9',
+    fontSize: 20,
+    color: '#FFFFFF',
     fontWeight: 'bold'
   },
   mentionedContent: {
-    fontSize: 20,
-    color: '#057370'
-  },
-  Content: {
-    fontSize: 14,
-    color: '#68BBB9',
-    fontWeight: '300'
+    fontSize: 18,
+    color: '#FFFFFF',
+    fontWeight: 'bold'
   },
   desc: {
-    fontSize: 18,
-    color: '#8F8F8F'
+    fontSize: 16,
+    color: '#FFFFFF'
   },
   sectionTitle: {
     marginTop: metrics.doubleBaseMargin,

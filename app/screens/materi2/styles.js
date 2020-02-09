@@ -2,6 +2,7 @@
 import { StyleSheet } from 'react-native';
 import { COLOR_WHITE } from '../../styles';
 import metrics from '../../constants/metrics';
+import { scale } from '../../utils/scaling';
 
 const styles = StyleSheet.create({
   card: {
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
   },
   bg: {
     height: '100%',
-    resizeMode: 'stretch',
+    resizeMode: 'contain',
     width: '100%'
   },
   title: {
@@ -27,13 +28,13 @@ const styles = StyleSheet.create({
   },
   // eslint-disable-next-line react-native/no-color-literals
   titleText: {
-    fontSize: 24,
-    color: '#4994B9',
+    fontSize: 20,
+    color: '#FFF',
     fontWeight: 'bold'
   },
   mentionedContent: {
-    fontSize: 18,
-    color: '#057370',
+    fontSize: 16,
+    color: '#FFF',
     fontWeight: '300'
   },
   Content: {
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     fontSize: 18,
-    color: '#8F8F8F'
+    color: '#FFF'
   },
   sectionTitle: {
     marginTop: metrics.doubleBaseMargin,
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     marginVertical: metrics.baseMargin
   },
   footerMarg: {
-    marginBottom: metrics.doubleBaseMargin
+    marginBottom: scale(60)
   }
   // text: {
   //   fontWeight: 'normal'

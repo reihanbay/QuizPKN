@@ -2,6 +2,7 @@ import { StackNavigator } from 'react-navigation';
 import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Menu from '../screens/Menu';
+import Quiz from '../screens/Quiz';
 import Login from '../screens/Login';
 import materi1 from '../screens/materi1';
 import materi2 from '../screens/materi2';
@@ -9,6 +10,7 @@ import materi3 from '../screens/materi3';
 import materi4 from '../screens/materi4';
 import materi5 from '../screens/materi5';
 import materi6 from '../screens/materi6';
+import vidCourse from '../screens/vidCourse';
 import Course from '../screens/Course';
 import SignIn from '../screens/SignIn';
 import UploadPhoto from '../screens/UploadPhoto';
@@ -62,10 +64,10 @@ export const SignInStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-export const MenuStack = StackNavigator(
+export const QuizStack = StackNavigator(
   {
-    Menu: {
-      screen: Menu,
+    Quiz:{
+      screen: Quiz,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -73,9 +75,14 @@ export const MenuStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-
-export const CourseStack = StackNavigator(
+export const MenuStack = StackNavigator(
   {
+    Menu: {
+      screen: Menu,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    },
     Course: {
       screen: Course,
       navigationOptions: {
@@ -117,10 +124,17 @@ export const CourseStack = StackNavigator(
       navigationOptions: {
         tabBarVisible: false
       }
+    },
+    vidCourse: {
+      screen: vidCourse,
+      navigationOptions: {
+        tabBarVisible: false
+      }
     }
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
+
 export const UploadPhotoStack = StackNavigator(
   {
     UploadPhoto: {

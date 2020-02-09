@@ -2,11 +2,11 @@
  * @providesModule config-styles
  */
 
-import { gray, teal, red, black, white } from './colors';
+import { gray, red, black, white } from './colors';
 
-export const COLOR_BASE_PRIMARY_DARK = teal.teal_70;
-export const COLOR_BASE_PRIMARY_MAIN = teal.teal_50;
-export const COLOR_BASE_PRIMARY_LIGHT = teal.teal_10;
+export const COLOR_BASE_PRIMARY_DARK = '#BF7304';
+export const COLOR_BASE_PRIMARY_MAIN = '#252C4E';
+export const COLOR_BASE_PRIMARY_LIGHT = '#FCA82F';
 export const COLOR_LINE = '#29293E';
 export const COLOR_BASE_SECONDARY_DARK = '#ba000d';
 export const COLOR_BASE_SECONDARY_MAIN = '#f44336';

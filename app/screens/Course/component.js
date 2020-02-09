@@ -1,12 +1,15 @@
+/* eslint-disable import/first */
 import React from 'react';
-import { ImageBackground, ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import MainScreen from '../../components/layouts/MainScreen';
+import { Container, Content } from 'native-base';
 import styles from './styles';
 import images from '../../configs/images';
 import I18n from '../../i18n';
+import Header from '../../components/elements/Header';
 import StatusBar from '../../components/elements/StatusBar';
-import Card from '../../components/elements/cardCourse';
+import Button from '../../components/elements/BtnMulti';
 // import { ENDPOINT } from '../../configs';
 
 export default class Component extends React.Component {
@@ -33,59 +36,61 @@ export default class Component extends React.Component {
   _handleSubCourse6 = async () => {
     this.props.navigation.navigate('materi6');
   };
+  _handleVidCourse = async () => {
+    this.props.navigation.navigate('vidCourse');
+  };
   render() {
     return (
       <MainScreen style={styles.container}>
-        <StatusBar />
-        <ImageBackground source={images.bg.bg2} style={styles.bg}>
-          <View style={styles.title}>
-            <Text style={styles.titleText}>{I18n.t('HAM')}</Text>
-          </View>
-          <ScrollView>
-            <Card
-              onPress={this._handleSubCourse1}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course1')}
-              press={I18n.t('Learn')}
-            />
-            <Card
-              onPress={this._handleSubCourse2}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course2')}
-              press={I18n.t('Learn')}
-            />
-            <Card
-              onPress={this._handleSubCourse3}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course3')}
-              press={I18n.t('Learn')}
-            />
-            <Card
-              onPress={this._handleSubCourse4}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course4')}
-              press={I18n.t('Learn')}
-            />
-            <Card
-              onPress={this._handleSubCourse5}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course5')}
-              press={I18n.t('Learn')}
-            />
-            <Card
-              onPress={this._handleSubCourse6}
-              customContainer={styles.card}
-              customText={styles.text}
-              title={I18n.t('course6')}
-              press={I18n.t('Learn')}
-            />
-          </ScrollView>
-        </ImageBackground>
+        <Container style={styles.container}>
+          <Content>
+            <StatusBar />
+            <ImageBackground source={images.bg.materi} style={styles.bg}>
+              <ScrollView>
+                <Header back />
+                <View style={styles.title}>
+                  <Text style={styles.titleText}>{I18n.t('menu.course.text')}</Text>
+                </View>
+                <Button
+                  onPress={this._handleSubCourse1}
+                  customContainer={[styles.button, styles.me]}
+                  customText1={styles.text1}
+                  title={I18n.t('course1')}
+                />
+                <Button
+                  onPress={this._handleSubCourse2}
+                  customContainer={[styles.button, styles.ji]}
+                  customText1={styles.text1}
+                  title={I18n.t('course2')}
+                />
+                <Button
+                  onPress={this._handleSubCourse3}
+                  customContainer={[styles.button, styles.ku]}
+                  customText1={styles.text1}
+                  title={I18n.t('course3')}
+                />
+                <Button
+                  onPress={this._handleSubCourse4}
+                  customContainer={[styles.button, styles.hi]}
+                  customText1={styles.text1}
+                  title={I18n.t('course4')}
+                />
+                <Button
+                  onPress={this._handleSubCourse5}
+                  customContainer={[styles.button, styles.bi]}
+                  customText1={styles.text1}
+                  title={I18n.t('course5')}
+                />
+                <Button
+                  onPress={this._handleSubCourse6}
+                  customContainer={[styles.button, styles.ni]}
+                  customText1={styles.text1}
+                  title={I18n.t('course6')}
+                />
+              </ScrollView>
+            </ImageBackground>
+          </Content>
+        </Container>
       </MainScreen>
     );
   }

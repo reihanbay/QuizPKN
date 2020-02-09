@@ -6,18 +6,27 @@
   "email": "Email",
   "dontHave": "Belum Punya Akun ?",
   "login": "Masuk",
+  "guest": "Guest",
+  "sinau": "Pembelajaran",
   "rememberMe": "Remember Me",
+  "header":{
+    "header1": "Ayo Belajar Tentang HAM",
+    "header2": "Indonesia adalah nagara hukum, kamu sebagai rakyat harus mengerti tentang hukum"
+  },
   "signUp": "Daftar",
   "Have":"Sudah Punya Akun ?",
   "signIn":"Masuk",
   "menu":{
     "exam":"Latihan Soal",
+    "examDesc": "Berisi materi pembelajaran tentang HAM di Indonesia",
     "course":{
       "text":"Materi",
+      "textDesc": "Latihan soal dengan pembahasan yang lengkap",
       "vid":"Video"
     },
     "quiz": "Quiz",
-    "aboutUs": "Tentang Kita"
+    "quizDesc": "Uji kemampuan kamu tentang HAM di Indonesia",
+    "aboutUs": "Tentang Kami"
   },
   "HAM": "Hak Asasi Manusia",
   "course1": "Pengertian Hak Asasi Manusia",

@@ -28,13 +28,14 @@ const styles = StyleSheet.create({
   },
   // eslint-disable-next-line react-native/no-color-literals
   titleText: {
-    fontSize: 24,
-    color: '#4994B9',
+    fontSize: 20,
+    color: '#FFF',
     fontWeight: 'bold'
   },
   mentionedContent: {
     fontSize: 20,
-    color: '#057370'
+    color: '#057370',
+    fontWeight: 'bold'
   },
   Content: {
     fontSize: 14,
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     fontSize: 18,
-    color: '#8F8F8F'
+    color: '#FFF'
   },
   sectionTitle: {
     marginTop: metrics.doubleBaseMargin,
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     marginVertical: metrics.baseMargin
   },
   footerMarg: {
-    marginBottom: scale(400)
+    marginBottom: scale(250)
   }
   // text: {
   //   fontWeight: 'normal'

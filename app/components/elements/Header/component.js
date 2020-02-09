@@ -3,15 +3,16 @@ import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 import BackButton from '../BackButton';
-import BurgerButton from '../BurgerButton';
-import Setting from '../../../../assets/svgs/Setting';
+import VidButton from '../vidButton';
+import CourseButton from '../courseButton';
+import { noop } from '../../../utils';
 
 export default class Component extends React.Component {
   _renderLeft = () => {
-    const { burger, back, leftComponent, leftContainerStyle } = this.props;
+    const { back, course, leftComponent, leftContainerStyle } = this.props;
     let LeftComponent = <View />;
-    if (burger) {
-      LeftComponent = <BurgerButton />;
+    if (course) {
+      LeftComponent = <CourseButton />;
     } else if (back) {
       LeftComponent = <BackButton />;
     } else if (leftComponent) {
@@ -32,14 +33,18 @@ export default class Component extends React.Component {
   _renderTitle = title => <Text style={styles.title}>{title}</Text>;
 
   _renderRight = () => {
-    const { setting, rightComponent, rightContainerStyle } = this.props;
+    const { onPress = noop, vid, rightComponent, rightContainerStyle } = this.props;
     let RightComponent = <View />;
-    if (setting) {
-      RightComponent = <Setting />;
+    if (vid) {
+      RightComponent = <VidButton />;
     } else if (rightComponent) {
       RightComponent = rightComponent;
     }
-    return <View style={[styles.leftRightContainer, rightContainerStyle]}>{RightComponent}</View>;
+    return (
+      <View style={[styles.leftRightContainer, rightContainerStyle]} onPress={onPress}>
+        {RightComponent}
+      </View>
+    );
   };
 
   render() {
@@ -56,14 +61,15 @@ export default class Component extends React.Component {
 Component.propTypes = {
   title: PropTypes.string,
   leftContainerStyle: PropTypes.object,
+  onPress: PropTypes.func.isRequired,
   centerContainerStyle: PropTypes.object,
   rightContainerStyle: PropTypes.object,
   leftComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.any]),
   centerComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.any]),
   rightComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.any]),
-  burger: PropTypes.bool,
   back: PropTypes.bool,
-  setting: PropTypes.bool
+  vid: PropTypes.bool,
+  course: PropTypes.bool
 };
 
 Component.defaultProps = {
@@ -74,7 +80,7 @@ Component.defaultProps = {
   leftComponent: <View />,
   centerComponent: <View />,
   rightComponent: <View />,
-  burger: false,
-  back: true,
-  setting: false
+  back: false,
+  vid: false,
+  course: false
 };

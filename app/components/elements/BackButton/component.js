@@ -1,8 +1,8 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
-import Back from '../../../../assets/svgs/Back';
+import images from '../../../configs/images';
 
 export default class Component extends React.Component {
   _onPress = () => {
@@ -12,7 +12,7 @@ export default class Component extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={this._onPress} style={styles.container}>
-        <Back />
+        <ImageBackground style={styles.icon} source={images.back} />
       </TouchableOpacity>
     );
   }

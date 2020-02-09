@@ -9,16 +9,19 @@ export default SwitchNavigator(
     App: Drawer,
     Menu: MenuStack,
     SignIn:SignInStack,
-    Course: CourseStack,
-    materi1: CourseStack,
-    materi2: CourseStack,
-    materi3: CourseStack,
-    materi4: CourseStack,
-    materi5: CourseStack,
-    materi6: CourseStack
+    Course: MenuStack,
+    materi1: MenuStack,
+    materi2: MenuStack,
+    materi3: MenuStack,
+    materi4: MenuStack,
+    materi5: MenuStack,
+    materi6: MenuStack,
+    vidCourse: MenuStack,
+    Quiz: quizStack
+
 
   },
   {
-    initialRouteName: 'Course'
+    initialRouteName: 'Quiz'
   }
 );

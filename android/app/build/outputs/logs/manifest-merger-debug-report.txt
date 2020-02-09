@@ -4,11 +4,14 @@ ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidMani
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
+MERGED from [:react-native-vector-icons] D:\File\jajal\codebase-mobile-master\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-video] D:\File\jajal\codebase-mobile-master\node_modules\react-native-video\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-i18n] D:\File\jajal\codebase-mobile-master\node_modules\react-native-i18n\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:rn-fetch-blob] D:\File\jajal\codebase-mobile-master\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-47:12
 MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:17:1-22:12
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-scalablevideoview-1.0.4.aar\df25c9a8cf3273d9e4be5d1f526d3c25\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\b5e61987da52d7981b0a45be98922121\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c811d9f4a78e4bc81db15ad1e122fd54\AndroidManifest.xml:17:1-22:12
@@ -119,6 +122,10 @@ uses-sdk
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] D:\File\jajal\codebase-mobile-master\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\File\jajal\codebase-mobile-master\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] D:\File\jajal\codebase-mobile-master\node_modules\react-native-video\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] D:\File\jajal\codebase-mobile-master\node_modules\react-native-video\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] D:\File\jajal\codebase-mobile-master\node_modules\react-native-svg\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-i18n] D:\File\jajal\codebase-mobile-master\node_modules\react-native-i18n\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
@@ -129,6 +136,8 @@ MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\ca
 MERGED from [com.facebook.react:react-native:0.54.2] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\react-native-0.54.2.aar\cf7141f2ed22a0e5b1dc1eaa44cfe2d1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ee10045fe514570946af77d1437ea010\AndroidManifest.xml:20:5-44
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-scalablevideoview-1.0.4.aar\df25c9a8cf3273d9e4be5d1f526d3c25\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\android-scalablevideoview-1.0.4.aar\df25c9a8cf3273d9e4be5d1f526d3c25\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\36cf17d1b8d5519789cc2f89d17b7325\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TOSHIBA\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\b5e61987da52d7981b0a45be98922121\AndroidManifest.xml:20:5-44

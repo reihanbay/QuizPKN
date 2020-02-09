@@ -3,6 +3,7 @@ import { ImageBackground, ScrollView, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import MainScreen from '../../components/layouts/MainScreen';
 import styles from './styles';
+import Header from '../../components/elements/Header';
 import images from '../../configs/images';
 import I18n from '../../i18n';
 import StatusBar from '../../components/elements/StatusBar';
@@ -22,7 +23,8 @@ export default class Component extends React.Component {
       <MainScreen style={styles.container}>
         <StatusBar />
         <ScrollView>
-          <ImageBackground source={images.bg.bgCourse} style={styles.bg}>
+          <ImageBackground source={images.bg.subMateri} style={styles.bg}>
+          <Header back />
             <View style={styles.containerText}>
               <Text style={[styles.titleText, styles.sectionTitle]}>{I18n.t('judulMateri2')}</Text>
               <Text style={[styles.desc, styles.section]}>{I18n.t('isiMateri2.desc')}</Text>

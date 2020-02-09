@@ -27,17 +27,18 @@ const styles = StyleSheet.create({
   },
   // eslint-disable-next-line react-native/no-color-literals
   titleText: {
-    fontSize: 24,
-    color: '#4994B9',
+    fontSize: 20,
+    color: '#FFF',
     fontWeight: 'bold'
   },
   mentionedContent: {
-    fontSize: 20,
-    color: '#057370'
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold'
   },
   Content: {
-    fontSize: 14,
-    color: '#68BBB9',
+    fontSize: 16,
+    color: '#fff',
     fontWeight: '300'
   },
   desc: {

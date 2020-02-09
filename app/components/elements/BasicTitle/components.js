@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, Text, TouchableOpacity, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
-import { COLOR_GREY, COLOR_EVENT_ERROR } from '../../../styles';
+import { COLOR_WHITE, COLOR_EVENT_ERROR } from '../../../styles';
 import { noop } from '../../../utils';
 
 export default class Component extends React.Component {
@@ -26,7 +26,7 @@ export default class Component extends React.Component {
         <TouchableOpacity style={styles.inputContainer} onPress={onPressTextInput}>
           <TextInput
             style={[editable ? styles.textInput : styles.textInputInactive, customTextInput]}
-            underlineColorAndroid={errorMessage === null ? COLOR_GREY : COLOR_EVENT_ERROR}
+            underlineColorAndroid={errorMessage === null ? COLOR_WHITE : COLOR_EVENT_ERROR}
             pointerEvents="none"
             mode="outlined"
             editable={false}

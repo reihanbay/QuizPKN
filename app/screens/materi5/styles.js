@@ -27,26 +27,27 @@ const styles = StyleSheet.create({
   },
   // eslint-disable-next-line react-native/no-color-literals
   titleText: {
-    fontSize: 24,
-    color: '#4994B9',
+    fontSize: 20,
+    color: '#FFF',
     fontWeight: 'bold'
   },
   mentionedContent: {
-    fontSize: 20,
-    color: '#057370'
+    fontSize: 18,
+    color: '#FFF',
+    fontWeight: 'bold'
   },
   Content: {
     fontSize: 16,
-    color: '#68BBB9',
+    color: '#FFF',
     fontWeight: '300'
   },
   desc: {
-    fontSize: 18,
-    color: '#8F8F8F'
+    fontSize: 16,
+    color: '#FFF'
   },
   subSection: {
     fontSize: 14,
-    color: '#8F8F8F'
+    color: '#fff'
   },
   sectionTitle: {
     marginTop: metrics.doubleBaseMargin,

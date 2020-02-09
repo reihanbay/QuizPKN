@@ -1,13 +1,24 @@
 /* eslint-disable global-require */
 const images = {
   bg: {
-    bg2: require('../../assets/images/bg2.png'),
-    bgCourse: require('../../assets/images/bgCourse.png')
+    login: require('../../assets/images/login.png'),
+    menu: require('../../assets/images/menu.png'),
+    materi: require('../../assets/images/materi.png'),
+    subMateri: require('../../assets/images/subMateri.png'),
+    quiz: require('../../assets/images/quiz.png')
   },
+
+  vid: require('../../assets/images/vidIcon.png'),
+  back: require('../../assets/images/buttonBack.png'),
+  course: require('../../assets/images/courseIcon.png'),
   card: require('../../assets/images/card.png'),
   lock: require('../../assets/images/lock.png'),
   user: require('../../assets/images/p.png'),
-  logo: require('../../assets/images/logo.png')
+  logo: require('../../assets/images/logo.png'),
+  ic: require('../../assets/images/ic.png'),
+  lat: require('../../assets/images/latihan.png'),
+  exam: require('../../assets/images/exam.png')
+
   // checkBoxOn: require('../../assets/images/checkbox_on.png'),
   // checkBoxOff: require('../../assets/images/checkbox_off.png'),
   // close: require('../../assets/images/close.png'),

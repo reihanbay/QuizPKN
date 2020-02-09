@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-color-literals */
 import { StyleSheet } from 'react-native';
 import {
   COLOR_GREY,
@@ -7,16 +8,16 @@ import {
   FONT_BUTTON_PRIMARY,
   COLOR_WHITE,
   COLOR_LINE,
-  COLOR_BASE_PRIMARY_LIGHT
+  COLOR_BASE_PRIMARY_LIGHT,
+  COLOR_BASE_PRIMARY_DARK
 } from '../../styles';
 import { scale, verticalScale } from '../../utils/scaling';
-import METRICS from '../../constants/metrics';
+import metrics from '../../constants/metrics';
 
 const styles = StyleSheet.create({
   button: {
     alignSelf: 'center',
-    height: scale(60),
-    // elevation: 1.0
+    marginVertical: metrics.baseMargin
   },
   checkBox: {
     left: scale(20),
@@ -24,14 +25,15 @@ const styles = StyleSheet.create({
     opacity: 0.4
   },
   container: {
-    backgroundColor: COLOR_WHITE
+    backgroundColor: '#6066D0'
   },
   forgotPassword: {
     ...FONT_BODY1_PRIMARY,
-    alignSelf: 'center',
-    color: COLOR_GREY,
+    justifyContent: 'flex-start',
+    color: COLOR_WHITE,
     fontSize: 13,
-    marginTop: 15
+    marginHorizontal: scale(25),
+    width: scale(300)
   },
   inputBoxName: {
     ...FONT_BODY1_PRIMARY,
@@ -42,7 +44,6 @@ const styles = StyleSheet.create({
   inputBoxPass: {
     ...FONT_BODY1_PRIMARY,
     alignSelf: 'center',
-    marginBottom: 30,
     width: scale(300)
   },
   inputName: {
@@ -53,14 +54,34 @@ const styles = StyleSheet.create({
   },
   logo: {
     alignSelf: 'center',
-    height: scale(250),
-    marginTop: scale(25),
+    height: scale(210),
+    marginTop: scale(15),
+    marginVertical: metrics.baseMargin,
     resizeMode: 'contain',
-    width: scale(250)
+    width: scale(260)
   },
   register: {
-    color: COLOR_BASE_PRIMARY_LIGHT
+    color: COLOR_BASE_PRIMARY_LIGHT,
+    fontWeight: 'bold'
   },
+  header: {
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: metrics.doubleBaseMargin
+  },
+  header1: {
+    color: COLOR_WHITE,
+    fontWeight: 'bold',
+    fontSize: 22,
+    marginVertical: metrics.baseMargin
+  },
+  header2: {
+    color: COLOR_WHITE,
+    fontSize: 14,
+    fontWeight: '100',
+    marginBottom: metrics.doubleBaseMargin
+  }
   // rememberMe: {
   //   ...FONT_HEADLINE3_PRIMARY,
   //   color: COLOR_GREY,
