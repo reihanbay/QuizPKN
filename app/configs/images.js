@@ -7,7 +7,13 @@ const images = {
     subMateri: require('../../assets/images/subMateri.png'),
     quiz: require('../../assets/images/quiz.png')
   },
-
+  smk: require('../../assets/images/smk.png'),
+  splash: require('../../assets/images/splash.gif'),
+  pic1: require('../../assets/images/pic1.png'),
+  pic2: require('../../assets/images/pic2.png'),
+  pic3: require('../../assets/images/pic3.png'),
+  pic4: require('../../assets/images/pic4.png'),
+  pic5: require('../../assets/images/pic5.png'),
   vid: require('../../assets/images/vidIcon.png'),
   back: require('../../assets/images/buttonBack.png'),
   course: require('../../assets/images/courseIcon.png'),

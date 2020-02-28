@@ -37,6 +37,14 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: COLOR_BASE_PRIMARY_MAIN
   },
+  about: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: metrics.doubleBaseMargin,
+    margin: 0,
+    marginBottom: metrics.doubleBaseMargin,
+    width: scale(300)
+  },
   header: {
     alignSelf: 'center',
     marginTop: metrics.baseMargin

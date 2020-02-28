@@ -1,27 +1,86 @@
+/* eslint-disable react-native/no-color-literals */
 import { StyleSheet } from 'react-native';
 import { COLOR_WHITE } from '../../styles';
 import { scale } from '../../utils/scaling';
+import metrics from '../../constants/metrics';
 
 const styles = StyleSheet.create({
-  button: {
-    alignSelf: 'center',
-    height: scale(50),
-    width: scale(255),
-    marginVertical: scale(10)
-    // elevation: 1.0
-  },
   container: {
     backgroundColor: COLOR_WHITE
   },
-  logo: {
+  about: {
+    marginVertical: metrics.baseMargin,
+    marginHorizontal: metrics.doubleBaseMargin,
+    margin: 0,
+    marginBottom: metrics.baseMargin,
+    flexDirection: 'row',
+    width: scale(300),
+    height: scale(60)
+  },
+  pict: {
+    width: scale(120),
+    height: scale(40),
     alignSelf: 'center',
-    height: scale(250),
-    marginTop: scale(25),
     resizeMode: 'contain',
-    width: scale(250)
+    marginHorizontal: metrics.doubleBaseMargin
+  },
+  picture: {
+    width: scale(60),
+    height: scale(60),
+    alignSelf: 'center',
+    resizeMode: 'contain'
+  },
+  pic: {
+    flex: 1,
+    height: scale(60)
+  },
+  bg: {
+    height: '100%',
+    resizeMode: 'stretch',
+    width: '100%'
+  },
+  desc: {
+    flex: 3,
+    flexDirection: 'column',
+    marginHorizontal: metrics.doubleBaseMargin,
+    height: scale(60)
+  },
+  name: {
+    fontSize: 18,
+    color: '#FCA82F',
+    marginBottom: scale(5)
+  },
+  self: {
+    fontSize: 18,
+    color: COLOR_WHITE
   },
   text: {
-    fontWeight: 'normal'
+    fontWeight: 'bold',
+    fontSize: 22,
+    color: COLOR_WHITE
+  },
+  title: {
+    marginHorizontal: metrics.doubleBaseMargin,
+    marginVertical: metrics.baseMargin
+  },
+  iklan: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: metrics.doubleBaseMargin,
+    margin: 0,
+    marginBottom: metrics.doubleBaseMargin,
+    width: scale(300)
+  },
+  touchMe: {
+    height: scale(40),
+    backgroundColor: COLOR_WHITE,
+    borderRadius: 10
+  },
+  sup: {
+    textAlign: 'center',
+    fontSize: 14,
+    color: COLOR_WHITE,
+    marginVertical: metrics.baseMargin
   }
 });
 

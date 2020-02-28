@@ -2,7 +2,7 @@ import { StackNavigator } from 'react-navigation';
 import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Menu from '../screens/Menu';
-import Quiz from '../screens/Quiz';
+import QuizScreen from '../screens/QuizScreen';
 import Login from '../screens/Login';
 import materi1 from '../screens/materi1';
 import materi2 from '../screens/materi2';
@@ -10,9 +10,10 @@ import materi3 from '../screens/materi3';
 import materi4 from '../screens/materi4';
 import materi5 from '../screens/materi5';
 import materi6 from '../screens/materi6';
-import vidCourse from '../screens/vidCourse';
+import SplashScreen from '../screens/Splashscreen';
 import Course from '../screens/Course';
 import SignIn from '../screens/SignIn';
+import About from '../screens/About';
 import UploadPhoto from '../screens/UploadPhoto';
 import History from '../screens/History';
 import Account from '../screens/Account';
@@ -41,7 +42,6 @@ export const SearchStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-
 export const LoginStack = StackNavigator(
   {
     Login: {
@@ -66,8 +66,19 @@ export const SignInStack = StackNavigator(
 );
 export const QuizStack = StackNavigator(
   {
-    Quiz:{
-      screen: Quiz,
+    QuizScreen:{
+      screen: QuizScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    }
+  },
+  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+export const SplashStack = StackNavigator(
+  {
+    SplashScreen:{
+      screen: SplashScreen,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -125,14 +136,14 @@ export const MenuStack = StackNavigator(
         tabBarVisible: false
       }
     },
-    vidCourse: {
-      screen: vidCourse,
-      navigationOptions: {
-        tabBarVisible: false
+      About: {
+        screen: About,
+        navigationOptions: {
+          tabBarVisible: true
+        }
       }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+    },
+    { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
 
 export const UploadPhotoStack = StackNavigator(
