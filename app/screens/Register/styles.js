@@ -14,13 +14,13 @@ const styles = StyleSheet.create({
     marginBottom: verticalScale(40),
     opacity: 0.4
   },
-  container: {
-    backgroundColor: '#6066D0'
-  },
   bg: {
     width: '100%',
     height: '100%',
     resizeMode: 'stretch'
+  },
+  container: {
+    backgroundColor: '#6066D0'
   },
   forgotPassword: {
     ...FONT_BODY1_PRIMARY,

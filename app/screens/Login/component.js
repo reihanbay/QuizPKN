@@ -28,7 +28,7 @@ export default class Component extends React.Component {
   //   this.props.navigation.navigate('Menu');
   // };
   _handleRegister = async () => {
-    this.props.navigation.navigate('SignIn');
+    this.props.navigation.navigate('Register');
   };
   _handleLogin = async () => {
     const { email, password } = this.state;

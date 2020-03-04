@@ -2,11 +2,11 @@
 /* eslint-disable react-native/no-color-literals */
 /* eslint-disable no-plusplus */
 import React from 'react';
-import { Text, View, ImageBackground, ActivityIndicator } from 'react-native';
+import { Text, View, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import { Container, Content } from 'native-base';
 import MainScreen from '../../layouts/MainScreen';
-import { IMAGES, ENDPOINT } from '../../../configs';
+import { IMAGES } from '../../../configs';
 import styles from './styles';
 import Animbutton from '../BtnAnimate';
 import Button from '../btnQuiz';
@@ -74,6 +74,7 @@ export default class Component extends React.Component {
       question: arrnew[this.qno].question,
       options: arrnew[this.qno].options,
       correctoption: arrnew[this.qno].correctoption,
+      // answer: arrnew[this.qno].answer,
       countCheck: 0
     };
   }
@@ -99,7 +100,7 @@ export default class Component extends React.Component {
         correctoption: arrnew[this.qno].correctoption
       });
     } else {
-      this.props.quizFinish(this.score * 25);
+      this.props.examFinish(this.score * 25);
     }
   }
   // disabled() {
@@ -131,7 +132,6 @@ export default class Component extends React.Component {
           onColor="#FCA82F"
           effect="flash"
           // status={status => this._answer(status, k)}
-          // onPress={status=>this.next()}
           onPress={status => this._answer(status, k)}
           text={currentOptions[k]}
         />
@@ -160,8 +160,8 @@ export default class Component extends React.Component {
 }
 Component.propTypes = {
   // isLoading: true,
-  quizFinish: PropTypes.bool
+  examFinish: PropTypes.bool
 };
 Component.defaultProps = {
-  quizFinish: false
+  examFinish: false
 };

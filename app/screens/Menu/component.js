@@ -21,7 +21,7 @@ export default class Component extends React.Component {
     this.props.navigation.navigate('Course');
   };
   _handleExam = async () => {
-    this.props.navigation.navigate('Exam');
+    this.props.navigation.navigate('ExamScreen');
   };
   _handleQuiz = async () => {
     this.props.navigation.navigate('QuizScreen');

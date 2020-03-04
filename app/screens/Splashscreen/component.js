@@ -13,7 +13,7 @@ export default class Component extends React.Component {
     StatusBar.setHidden(true);
 
     if (data !== null) {
-      this.props.navigation.navigate('Menu');
+      this.props.navigation.navigate('Login');
     }
   }
 

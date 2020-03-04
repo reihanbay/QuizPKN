@@ -1,6 +1,6 @@
 /* eslint-disable no-shadow */
 import React from 'react';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import PropTypes from 'prop-types';
 import BackButton from '../../../../assets/svgs/Back';
 import NextButton from '../../../../assets/svgs/Next';
@@ -9,14 +9,17 @@ import { noop } from '../../../utils';
 
 export default class Component extends React.Component {
   _renderIcon = () => {
-    const { back, next } = this.props;
+    const { back, next, text } = this.props;
     let Component = <View />;
+    let Text = <Text />;
     if (next) {
       Component = <NextButton />;
     } else if (back) {
       Component = <BackButton />;
+    } else if (text) {
+      Text = <Text style={styles.nav}>{text}</Text>;
     }
-    return <View style={styles.icon}>{Component}</View>;
+    return <View style={styles.icon}>{Component || Text}</View>;
   };
   render() {
     const { onPress = noop, backBtn, nextBtn, customContainer } = this.props;
@@ -45,9 +48,9 @@ export default class Component extends React.Component {
 Component.propTypes = {
   next: PropTypes.bool,
   back: PropTypes.bool,
+  text: PropTypes.bool,
   nextBtn: PropTypes.bool,
   backBtn: PropTypes.bool,
-  title: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   customContainer: PropTypes.object
 };
@@ -55,6 +58,7 @@ Component.propTypes = {
 Component.defaultProps = {
   next: false,
   back: false,
+  text: false,
   nextBtn: false,
   backBtn: false,
   customContainer: {}

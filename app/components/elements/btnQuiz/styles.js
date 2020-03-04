@@ -29,6 +29,11 @@ export default StyleSheet.create({
     fontWeight: '400',
     fontSize: 16
   },
+  nav: {
+    color: COLOR_WHITE,
+    fontSize: 20,
+    fontWeight: '400'
+  },
   textDisabled: {
     color: COLOR_WHITE,
     fontSize: 16

@@ -1,7 +1,7 @@
 /* global fetch:false */
 
 export const config = {
-  baseUrl: 'http://34.238.41.114:8080'
+  baseUrl: 'http://35.173.220.127:8080'
 };
 
 export const STATUS_CODE = {

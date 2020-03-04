@@ -4,9 +4,11 @@
   "checkConnection": "No internet connection found. \nCheck your connection.",
   "country": "country",
   "email": "Email",
+  "name": "Nama",
+  "fullname": "Fullname",
   "dontHave": "Don't Have Account ?",
   "about": "About Us",
-  "Have":"Sudah Punya Akun ?",
+  "Have":"Have an Account ?",
   "signIn":"Masuk",
   "menu":{
     "exam":"Exam",
@@ -35,7 +37,7 @@
   "submit": "Submit",
   "tryAgain": "Try again",
   "update": "Update",
-  "username": "username",
+  "username": "Username",
   "updateBody": "Please update the application to the new version, \n to get the new contents",
   "updateTitle": "Update"
 }

@@ -1,5 +1,5 @@
 import { SwitchNavigator } from 'react-navigation';
-import { OnBoardingStack, LoginStack , SignInStack , MenuStack , SplashStack, QuizStack } from './stackNavigator';
+import { OnBoardingStack, LoginStack , RegiStack , MenuStack , SplashStack, QuizStack, ExamStack } from './stackNavigator';
 import { Drawer } from './drawerNavigator';
 
 export default SwitchNavigator(
@@ -9,7 +9,7 @@ export default SwitchNavigator(
     App: Drawer,
     About: MenuStack,
     Menu: MenuStack,
-    SignIn:SignInStack,
+    Register:RegiStack,
     Course: MenuStack,
     materi1: MenuStack,
     materi2: MenuStack,
@@ -18,6 +18,8 @@ export default SwitchNavigator(
     materi5: MenuStack,
     materi6: MenuStack,
     QuizScreen: QuizStack,
+    ExamScreen: ExamStack,
+    ExamResult: ExamStack,
     Splash: SplashStack
 
 

@@ -3,6 +3,8 @@ import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Menu from '../screens/Menu';
 import QuizScreen from '../screens/QuizScreen';
+import ExamScreen from '../screens/ExamScreen';
+import ExamResult from '../screens/ExamResult';
 import Login from '../screens/Login';
 import materi1 from '../screens/materi1';
 import materi2 from '../screens/materi2';
@@ -14,7 +16,7 @@ import SplashScreen from '../screens/Splashscreen';
 import Course from '../screens/Course';
 import SignIn from '../screens/SignIn';
 import About from '../screens/About';
-import UploadPhoto from '../screens/UploadPhoto';
+import Register from '../screens/Register';
 import History from '../screens/History';
 import Account from '../screens/Account';
 import OnBoarding from '../screens/OnBoarding';
@@ -68,6 +70,23 @@ export const QuizStack = StackNavigator(
   {
     QuizScreen:{
       screen: QuizScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    }
+  },
+  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+export const ExamStack = StackNavigator(
+  {
+    ExamScreen:{
+      screen: ExamScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    },
+    ExamResult:{
+      screen: ExamResult,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -146,10 +165,10 @@ export const MenuStack = StackNavigator(
     { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
 
-export const UploadPhotoStack = StackNavigator(
+export const RegiStack = StackNavigator(
   {
-    UploadPhoto: {
-      screen: UploadPhoto,
+    Register: {
+      screen: Register,
       navigationOptions: {
         tabBarVisible: true
       }

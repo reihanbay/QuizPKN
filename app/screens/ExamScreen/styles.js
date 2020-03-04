@@ -95,10 +95,10 @@ const styles = StyleSheet.create({
   },
   back: {
     marginRight: metrics.doubleBaseMargin,
-    backgroundColor: '#FCA82F'
+    backgroundColor: '#D95353'
   },
   next: {
-    backgroundColor: '#FCA82F'
+    backgroundColor: '#4EC65A'
   },
   nav: {
     color: COLOR_WHITE,

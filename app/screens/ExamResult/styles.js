@@ -1,8 +1,8 @@
 /* eslint-disable react-native/no-color-literals */
 import { StyleSheet } from 'react-native';
-import { COLOR_WHITE } from '../../../styles';
-import { scale } from '../../../utils/scaling';
-import metrics from '../../../constants/metrics';
+import { COLOR_WHITE } from '../../styles';
+import { scale } from '../../utils/scaling';
+import metrics from '../../constants/metrics';
 
 const styles = StyleSheet.create({
   button: {
