@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLOR_WHITE,
     width: scale(310),
     height: scale(220),
-    borderRadius: 10
+    borderRadius: 5
   },
   innerContainer: {
     flex: 1,
@@ -95,10 +95,10 @@ const styles = StyleSheet.create({
   },
   back: {
     marginRight: metrics.doubleBaseMargin,
-    backgroundColor: '#FCA82F'
+    backgroundColor: '#D95353'
   },
   next: {
-    backgroundColor: '#FCA82F'
+    backgroundColor: '#4EC65A'
   },
   nav: {
     color: COLOR_WHITE,

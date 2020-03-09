@@ -7,7 +7,7 @@ import MainScreen from '../../components/layouts/MainScreen';
 import styles from './styles';
 import images from '../../configs/images';
 import I18n from '../../i18n';
-// import StatusBar from '../../components/elements/StatusBar';
+import Start from '../beforeScreen';
 import Button from '../../components/elements/BtnMulti';
 // import { COLOR_WHITE } from '../../styles';
 // import { ENDPOINT } from '../../configs';
@@ -21,10 +21,10 @@ export default class Component extends React.Component {
     this.props.navigation.navigate('Course');
   };
   _handleExam = async () => {
-    this.props.navigation.navigate('ExamScreen');
+    this.props.navigation.navigate('beforeScreen', <Start quizFinish />);
   };
   _handleQuiz = async () => {
-    this.props.navigation.navigate('QuizScreen');
+    this.props.navigation.navigate('beforeScreen', <Start examFinish />);
   };
   _handleAbout = async () => {
     this.props.navigation.navigate('About');

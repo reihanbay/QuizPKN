@@ -4,7 +4,7 @@ import { StatusBar, View, Text, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Exam from '../../components/elements/Exam';
-import Button from '../../components/elements/btnQuiz';
+import ButtonText from '../../components/elements/btnText';
 import IMAGES from '../../configs/images';
 import styles from './styles';
 
@@ -30,12 +30,12 @@ export default class Component extends React.Component {
     this.setState({ examFinish: true, score });
   }
   _button() {
-    const Text1 = <Text>Menu Awal</Text>;
-    const Text2 = <Text>Pembahasan</Text>;
+    const Text1 = 'Menu Awal';
+    const Text2 = 'Pembahasan';
     return (
       <View style={styles.btn}>
-        <Button customContainer={styles.back} onPress={() => this._backToMenu()} text={Text1} />
-        <Button customContainer={styles.next} onPress={() => this._onPressBahas()} text={Text2} />
+        <ButtonText customContainer={styles.back} onPress={() => this._backToMenu()} text={Text1} />
+        <ButtonText customContainer={styles.next} onPress={() => this._onPressBahas()} text={Text2} />
       </View>
     );
   }

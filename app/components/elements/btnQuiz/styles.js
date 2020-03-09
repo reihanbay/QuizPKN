@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { COLOR_BASE_PRIMARY_DARK, COLOR_FONT_PRIMARY_LIGHT, COLOR_WHITE, COLOR_GREY } from '../../../styles';
+import { COLOR_WHITE } from '../../../styles';
 
 const container = {
   width: 140,
@@ -28,27 +28,27 @@ export default StyleSheet.create({
     color: COLOR_WHITE,
     fontWeight: '400',
     fontSize: 16
-  },
-  nav: {
-    color: COLOR_WHITE,
-    fontSize: 20,
-    fontWeight: '400'
-  },
-  textDisabled: {
-    color: COLOR_WHITE,
-    fontSize: 16
-  },
-  textPressed: {
-    color: COLOR_FONT_PRIMARY_LIGHT
-  },
-  button: {
-    lineHeight: 40
-  },
-  buttonPressed: {
-    ...container,
-    backgroundColor: COLOR_BASE_PRIMARY_DARK
-  },
-  buttonDisabled: {
-    backgroundColor: COLOR_GREY
   }
+  // nav: {
+  //   color: COLOR_WHITE,
+  //   fontSize: 20,
+  //   fontWeight: '400'
+  // },
+  // textDisabled: {
+  //   color: COLOR_WHITE,
+  //   fontSize: 16
+  // },
+  // textPressed: {
+  //   color: COLOR_FONT_PRIMARY_LIGHT
+  // },
+  // button: {
+  //   lineHeight: 40
+  // },
+  // buttonPressed: {
+  //   ...container,
+  //   backgroundColor: COLOR_BASE_PRIMARY_DARK
+  // },
+  // buttonDisabled: {
+  //   backgroundColor: COLOR_GREY
+  // }
 });

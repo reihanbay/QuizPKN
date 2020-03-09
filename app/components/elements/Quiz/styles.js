@@ -1,10 +1,9 @@
 /* eslint-disable react-native/no-color-literals */
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { COLOR_WHITE } from '../../../styles';
 import { scale } from '../../../utils/scaling';
 import metrics from '../../../constants/metrics';
 
-const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   button: {
     alignSelf: 'center',
@@ -30,9 +29,28 @@ const styles = StyleSheet.create({
   back: {
     marginRight: metrics.doubleBaseMargin
   },
-  // next: {
-  //   marginLeft: metrics.baseMargin
-  // },
+  option: {
+    width: scale(300),
+    height: scale(40),
+    justifyContent: 'center',
+    padding: 0,
+    borderWidth: 2,
+    borderRadius: 5,
+    lineHeight: 40,
+    alignSelf: 'center',
+    marginVertical: scale(5),
+    borderColor: COLOR_WHITE,
+    backgroundColor: 'transparent'
+  },
+  txtOption: {
+    color: COLOR_WHITE,
+    fontWeight: 'bold',
+    fontSize: 14,
+    marginHorizontal: metrics.baseMargin,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    width: scale(215)
+  },
   container: {
     backgroundColor: COLOR_WHITE,
     flex: 1,
@@ -52,6 +70,20 @@ const styles = StyleSheet.create({
   },
   text: {
     fontWeight: 'normal'
+  },
+  bahas: {
+    width: scale(300),
+    justifyContent: 'flex-start',
+    margin: metrics.doubleBaseMargin
+  },
+  titlePembahasan: {
+    color: '#FCA82F',
+    fontSize: 18,
+    marginBottom: metrics.baseMargin
+  },
+  pembahasan: {
+    color: '#FCA82F',
+    fontSize: 16
   }
 });
 

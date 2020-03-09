@@ -29,16 +29,16 @@ const styles = StyleSheet.create({
   back: {
     marginRight: metrics.doubleBaseMargin
   },
-  // next: {
-  //   marginLeft: metrics.baseMargin
-  // },
+  next: {
+    backgroundColor: '#FCA82F'
+  },
   container: {
     backgroundColor: COLOR_WHITE,
     flex: 1,
     alignItems: 'center'
   },
   btn: {
-    marginVertical: scale(50),
+    marginVertical: scale(40),
     flexDirection: 'row',
     alignSelf: 'center'
   },
@@ -60,11 +60,16 @@ const styles = StyleSheet.create({
   titlePembahasan: {
     color: '#FCA82F',
     fontSize: 18,
-    marginBottom: metrics.baseMargin
+    marginBottom: metrics.baseMargin,
+    fontWeight: 'bold',
+    padding: 0
   },
   pembahasan: {
     color: '#FCA82F',
-    fontSize: 16
+    fontSize: 16,
+    marginBottom: metrics.baseMargin,
+    fontWeight: 'bold',
+    padding: 0
   }
 });
 

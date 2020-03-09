@@ -9,18 +9,16 @@ import { noop } from '../../../utils';
 
 export default class Component extends React.Component {
   _renderIcon = () => {
-    const { back, next, text } = this.props;
+    const { back, next } = this.props;
     let Component = <View />;
-    let Text = <Text />;
     if (next) {
       Component = <NextButton />;
     } else if (back) {
       Component = <BackButton />;
-    } else if (text) {
-      Text = <Text style={styles.nav}>{text}</Text>;
     }
-    return <View style={styles.icon}>{Component || Text}</View>;
+    return <View style={styles.icon}>{Component}</View>;
   };
+
   render() {
     const { onPress = noop, backBtn, nextBtn, customContainer } = this.props;
 
@@ -48,7 +46,6 @@ export default class Component extends React.Component {
 Component.propTypes = {
   next: PropTypes.bool,
   back: PropTypes.bool,
-  text: PropTypes.bool,
   nextBtn: PropTypes.bool,
   backBtn: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
@@ -58,7 +55,6 @@ Component.propTypes = {
 Component.defaultProps = {
   next: false,
   back: false,
-  text: false,
   nextBtn: false,
   backBtn: false,
   customContainer: {}

@@ -3,6 +3,7 @@ import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Menu from '../screens/Menu';
 import QuizScreen from '../screens/QuizScreen';
+import beforeScreen from '../screens/beforeScreen';
 import ExamScreen from '../screens/ExamScreen';
 import ExamResult from '../screens/ExamResult';
 import Login from '../screens/Login';
@@ -70,6 +71,23 @@ export const QuizStack = StackNavigator(
   {
     QuizScreen:{
       screen: QuizScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    },
+    beforeScreen:{
+      screen: beforeScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    }
+  },
+  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+export const beforeStack = StackNavigator(
+  {
+    beforeScreen:{
+      screen: beforeScreen,
       navigationOptions: {
         tabBarVisible: true
       }

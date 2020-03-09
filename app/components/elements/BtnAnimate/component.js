@@ -6,7 +6,6 @@ import React from 'react';
 import { Text, TouchableWithoutFeedback } from 'react-native';
 import PropTypes from 'prop-types';
 import * as Animatable from 'react-native-animatable';
-import { COLOR_WHITE } from '../../../styles';
 import metrics from '../../../constants/metrics';
 import { scale } from '../../../utils/scaling';
 
@@ -55,24 +54,10 @@ export default class Component extends React.Component {
     }
   }
   render() {
+    const { customBtn } = this.props;
     return (
       <TouchableWithoutFeedback onPress={() => this._onPress()}>
-        <Animatable.View
-          ref="view"
-          style={{
-            marginVertical: metrics.baseMargin,
-            justifyContent: 'center',
-            alignSelf: 'center',
-            padding: 0,
-            width: 300,
-            height: 40,
-            borderWidth: 2,
-            lineHeight: 40,
-            borderColor: this.state.status ? this.props.onColor : COLOR_WHITE,
-            backgroundColor: this.state.status ? this.props.onColor : 'transparent',
-            borderRadius: 10
-          }}
-        >
+        <Animatable.View ref="view" style={customBtn}>
           <Text
             style={{
               color: this.state.status ? 'white' : 'white',
@@ -94,11 +79,10 @@ export default class Component extends React.Component {
 Component.propTypes = {
   text: PropTypes.string.isRequired,
   effect: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired
-  // status: PropTypes.bool
-  // onPress: PropTypes.bool
+  onPress: PropTypes.func.isRequired,
+  customBtn: PropTypes.object
 };
 
 Component.defaultProps = {
-  // onPress: !this.state.status
+  customBtn: {}
 };

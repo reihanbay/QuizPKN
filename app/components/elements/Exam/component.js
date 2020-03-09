@@ -1,155 +1,133 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable react-native/no-color-literals */
-/* eslint-disable no-plusplus */
+/* eslint-disable react/no-did-update-set-state */
+/* eslint-disable react/sort-comp */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable consistent-return */
 import React from 'react';
-import { Text, View, ImageBackground } from 'react-native';
+import { View, Text, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import { Container, Content } from 'native-base';
 import MainScreen from '../../layouts/MainScreen';
 import { IMAGES } from '../../../configs';
+import Animbutton from '../../elements/BtnAnimate';
+import Button from '../../elements/btnQuiz';
+import { quizData } from '../../../data/jsonExam';
 import styles from './styles';
-import Animbutton from '../BtnAnimate';
-import Button from '../btnQuiz';
-// import I18n from '../../i18n';
-// import StatusBar from '../../components/elements/StatusBar';
+import { scale } from '../../../utils/scaling';
 
-let arrnew = [];
-const jsonData = {
-  quiz: {
-    quiz1: {
-      question1: {
-        correctoption: 'option1',
-        options: {
-          option1: 'Pengadilan tata Negara',
-          option2: 'Komnas HAM',
-          option3: 'Komnas anti kekerasan terhadap perempuan',
-          option4: 'Pengadilan HAM'
-        },
-        question: '1. Berikut ini yang tidak termasuk lembaga peradilan HAM yaitu…'
-      },
-      question2: {
-        correctoption: 'option2',
-        options: {
-          option1: 'Komnas anti kekerasan terhadap perempuan',
-          option2: 'Komnas HAM',
-          option3: 'Pengadilan HAM',
-          option4: 'Pengadilan Militer'
-        },
-        question:
-          '2.Upaya peningkatan penegakkan serta penannggulangan segala bentuk kekerasan terhadap perempuan merupakan tujuan dari…'
-      },
-      question3: {
-        correctoption: 'option3',
-        options: {
-          option1: 'Criminal',
-          option2: 'Kemanusiaan',
-          option3: 'Genosida',
-          option4: 'General'
-        },
-        question:
-          '3.Suatu perbuatan yang dilakukan dengan tujuan untuk memusnakan atau menghancurkan sebagian atau seluruh bangsa, ras, kelompok agama kelompok etnis, merupakan kejahatan..'
-      },
-      question4: {
-        correctoption: 'option4',
-        options: {
-          option1: 'Kebutuhan masyarakat tidak terpenuhi',
-          option2: 'Kesejahteraan masyarakat tidak terwujud',
-          option3: 'Kebutuhan masyarakat tidak menentu',
-          option4: 'Kedamaian masyarakat terganggu'
-        },
-        question: '4. Segala perbuatan yang tidak menghormati hak orang lain akan menyebabkan …'
-      }
-    }
-  }
-};
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
-    this.qno = 0;
     this.score = 0;
-    this.incorrect = 0;
-    const jdata = jsonData.quiz.quiz1;
-    arrnew = Object.keys(jdata).map(k => jdata[k]);
     this.state = {
-      question: arrnew[this.qno].question,
-      options: arrnew[this.qno].options,
-      correctoption: arrnew[this.qno].correctoption,
-      // answer: arrnew[this.qno].answer,
-      countCheck: 0
+      currentQuestion: 0, // id penomoran soal//
+      myAnswer: null,
+      options: [],
+      disabled: true
     };
   }
+  loadQuizData = () => {
+    console.log(quizData[0].question);
+    this.setState(() => ({
+      questions: quizData[this.state.currentQuestion].question,
+      answer: quizData[this.state.currentQuestion].answer,
+      options: quizData[this.state.currentQuestion].options
+    }));
+  };
 
-  prev() {
-    if (this.qno > 0) {
-      this.qno--;
-      this.setState({
-        question: arrnew[this.qno].question,
-        options: arrnew[this.qno].options,
-        correctoption: arrnew[this.qno].correctoption
-      });
-    }
+  componentDidMount() {
+    this.loadQuizData();
   }
-  next() {
-    if (this.qno < arrnew.length - 1) {
-      this.qno++;
+  nextQuestionHandler = () => {
+    // console.log('test')
+    const { myAnswer, answer } = this.state;
 
-      this.setState({
-        countCheck: 0,
-        question: arrnew[this.qno].question,
-        options: arrnew[this.qno].options,
-        correctoption: arrnew[this.qno].correctoption
-      });
-    } else {
-      this.props.examFinish(this.score * 25);
+    if (myAnswer === answer) {
+      this.score += 1;
+    }
+    this.setState({
+      currentQuestion: this.state.currentQuestion + 1
+    });
+    console.log(this.state.currentQuestion);
+  };
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.currentQuestion !== prevState.currentQuestion) {
+      this.setState(() => ({
+        disabled: true,
+        questions: quizData[this.state.currentQuestion].question,
+        options: quizData[this.state.currentQuestion].options,
+        answer: quizData[this.state.currentQuestion].answer
+      }));
     }
   }
-  // disabled() {
-  //   if (this.qno++) {
-  //     this.setState({ check: this.state.status });
-  //   }
-  // }
-  _answer(status, ans) {
-    if (status === true) {
-      const count = this.state.countCheck + 1;
-      this.setState({ countCheck: count });
-      if (ans === this.state.correctoption) {
-        this.score += 1;
-      }
-    } else {
-      const count = this.state.countCheck - 1;
-      this.setState({ countCheck: count });
-      if (this.state.countCheck < 1 || ans === !this.state.correctoption) {
-        this.score -= 1;
-      }
+  // check answer
+  checkAnswer = answer => {
+    this.setState({ myAnswer: answer, disabled: false });
+  };
+  finishHandler = () => {
+    if (this.state.currentQuestion === quizData.length - 1) {
+      this.props.examFinish(this.score * 10);
     }
-  }
+  };
   render() {
-    const currentOptions = this.state.options;
-    const options = Object.keys(currentOptions).map(k => (
-      <View key={k} style={{ margin: 10 }}>
-        <Animbutton
-          countCheck={this.state.countCheck}
-          onColor="#FCA82F"
-          effect="flash"
-          // status={status => this._answer(status, k)}
-          onPress={status => this._answer(status, k)}
-          text={currentOptions[k]}
-        />
-      </View>
-    ));
-
+    const { options, myAnswer, currentQuestion } = this.state;
     return (
       <MainScreen>
         <Container>
           <ImageBackground source={IMAGES.bg.quiz} style={styles.bg}>
             <Content style={styles.Container}>
-              <View style={styles.questContainer}>
-                <Text style={styles.quest}>{this.state.question}</Text>
-              </View>
-              <View>{options}</View>
-              <View style={styles.btn}>
-                <Button back backBtn customContainer={styles.back} onPress={() => this.prev()} />
-                <Button next nextBtn customContainer={styles.next} onPress={() => this.next()} />
+              <View className="App">
+                <View style={styles.questContainer}>
+                  <Text style={styles.quest}>{this.state.questions}</Text>
+                </View>
+                {/* <Text>{`Questions ${currentQuestion}  out of ${quizData.length - 1} remaining `}</Text> */}
+                {options.map(option => (
+                  <View key={option.id} style={{ margin: 10 }}>
+                    <Animbutton
+                      countCheck={this.state.countCheck}
+                      onColor="#FCA82F"
+                      effect="flash"
+                      customBtn={{
+                        marginVertical: scale(5),
+                        justifyContent: 'center',
+                        alignSelf: 'center',
+                        padding: 0,
+                        width: 300,
+                        height: 40,
+                        borderWidth: 2,
+                        lineHeight: 40,
+                        borderColor: 'white',
+                        backgroundColor: myAnswer === option ? '#FCA82F' : null,
+                        borderRadius: 10
+                      }}
+                      onPress={() => this.checkAnswer(option)}
+                      text={option}
+                    />
+                  </View>
+                ))}
+                {currentQuestion < quizData.length - 1 && (
+                  <View style={styles.btn}>
+                    <Button
+                      next
+                      nextBtn
+                      customContainer={styles.next}
+                      disabled={this.state.disabled}
+                      onPress={this.nextQuestionHandler}
+                    />
+                  </View>
+                )}
+                {currentQuestion === quizData.length - 1 && (
+                  <View style={styles.btn}>
+                    {/* <Button back backBtn customContainer={styles.back} onPress={() => this.prev()} /> */}
+                    <Button
+                      next
+                      nextBtn
+                      customContainer={styles.next}
+                      disabled={this.state.disabled}
+                      onPress={this.finishHandler}
+                    />
+                  </View>
+                )}
               </View>
             </Content>
           </ImageBackground>
@@ -158,8 +136,8 @@ export default class Component extends React.Component {
     );
   }
 }
+
 Component.propTypes = {
-  // isLoading: true,
   examFinish: PropTypes.bool
 };
 Component.defaultProps = {
