@@ -3,7 +3,6 @@ import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 import BackButton from '../BackButton';
-import VidButton from '../vidButton';
 import CourseButton from '../courseButton';
 import { noop } from '../../../utils';
 
@@ -33,11 +32,9 @@ export default class Component extends React.Component {
   _renderTitle = title => <Text style={styles.title}>{title}</Text>;
 
   _renderRight = () => {
-    const { onPress = noop, vid, rightComponent, rightContainerStyle } = this.props;
+    const { onPress = noop, rightComponent, rightContainerStyle } = this.props;
     let RightComponent = <View />;
-    if (vid) {
-      RightComponent = <VidButton />;
-    } else if (rightComponent) {
+    if (rightComponent) {
       RightComponent = rightComponent;
     }
     return (
@@ -68,7 +65,6 @@ Component.propTypes = {
   centerComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.any]),
   rightComponent: PropTypes.oneOfType([PropTypes.element, PropTypes.any]),
   back: PropTypes.bool,
-  vid: PropTypes.bool,
   course: PropTypes.bool
 };
 
@@ -81,6 +77,5 @@ Component.defaultProps = {
   centerComponent: <View />,
   rightComponent: <View />,
   back: false,
-  vid: false,
   course: false
 };

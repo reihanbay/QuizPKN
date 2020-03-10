@@ -34,6 +34,7 @@ export default class Component extends React.Component {
                   <View style={styles.desc}>
                     <Text style={styles.name}>Timotius Muliawan</Text>
                     <Text style={styles.self}>Product Designer</Text>
+                    <Text style={styles.mail}>timotiusmuliawan05@gmail.com</Text>
                   </View>
                 </View>
                 <View style={styles.about}>
@@ -43,6 +44,7 @@ export default class Component extends React.Component {
                   <View style={styles.desc}>
                     <Text style={styles.name}>Reihan Bayzaky</Text>
                     <Text style={styles.self}>Android Developer</Text>
+                    <Text style={styles.mail}>bung.reihan28@gmail.com</Text>
                   </View>
                 </View>
                 <View style={styles.about}>
@@ -52,6 +54,7 @@ export default class Component extends React.Component {
                   <View style={styles.desc}>
                     <Text style={styles.name}>Rizka Salma Adelia</Text>
                     <Text style={styles.self}>Android Developer</Text>
+                    <Text style={styles.mail}>rizkasalmaadelia@gmail.com</Text>
                   </View>
                 </View>
                 <View style={styles.about}>
@@ -61,6 +64,7 @@ export default class Component extends React.Component {
                   <View style={styles.desc}>
                     <Text style={styles.name}>Rianita Dwi Pangestu</Text>
                     <Text style={styles.self}>Content Writer</Text>
+                    <Text style={styles.mail}>rianitadwipangestu99@gmail.com</Text>
                   </View>
                 </View>
                 <View style={styles.about}>
@@ -70,6 +74,7 @@ export default class Component extends React.Component {
                   <View style={styles.desc}>
                     <Text style={styles.name}>Reynozaky Nur Rahadian</Text>
                     <Text style={styles.self}>Content Writer</Text>
+                    <Text style={styles.mail}>reynozakynr111@gmail.com</Text>
                   </View>
                 </View>
                 <View style={styles.iklan}>

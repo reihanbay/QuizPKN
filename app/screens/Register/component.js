@@ -10,8 +10,8 @@ import StatusBar from '../../components/elements/StatusBar';
 import BasicTitle from '../../components/elements/BasicTitle';
 import Button from '../../components/elements/Button';
 import { ENDPOINT } from '../../configs';
-import { STORAGE_KEY } from '../../constants';
-import storage from '../../utils/storage';
+// import { STORAGE_KEY } from '../../constants';
+// import storage from '../../utils/storage';
 
 export default class Component extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ export default class Component extends React.Component {
       console.log({ params });
       const result = await ENDPOINT.register(params);
       console.log({ result });
-      if (result.expires_in === 3600) {
+      if (result.code === 201) {
         ToastAndroid.show('Your Account has Registered', ToastAndroid.SHORT);
       } else {
         ToastAndroid.show('Failed', ToastAndroid.SHORT);

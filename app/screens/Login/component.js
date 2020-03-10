@@ -11,6 +11,7 @@ import Button from '../../components/elements/Button';
 import { ENDPOINT } from '../../configs';
 import { STORAGE_KEY } from '../../constants';
 import storage from '../../utils/storage';
+// import axios from 'axios';
 
 export default class Component extends React.Component {
   constructor(props) {
@@ -24,9 +25,6 @@ export default class Component extends React.Component {
       isLoading: false
     };
   }
-  // _handleLogin = async () => {
-  //   this.props.navigation.navigate('Menu');
-  // };
   _handleRegister = async () => {
     this.props.navigation.navigate('Register');
   };
@@ -38,22 +36,18 @@ export default class Component extends React.Component {
       const result = await ENDPOINT.login(params);
       if (result.code === 200) {
         await storage.set(STORAGE_KEY.TOKEN_LOGIN, result.data);
+        this.setState({ isLoading: false });
         this.props.navigation.navigate('Menu');
       } else {
         ToastAndroid.show('Failed to login', ToastAndroid.SHORT);
       }
     } catch (error) {
+      console.log(error);
       ToastAndroid.show('error.networkError', ToastAndroid.SHORT);
     } finally {
       this.setState({ isLoading: false });
     }
   };
-  // _handleCheckbox = () => {
-  //   this.setState({ checked: !this.state.checked });
-  // };
-  // _handleShowPass = () => {
-  //   this.setState({ showPass: !this.state.showPass });
-  // };
   _handleUsername = async text => {
     await this.setState({ email: text });
     this.checkField();
@@ -97,13 +91,6 @@ export default class Component extends React.Component {
             onPressHiddenPass={this._handleShowPass}
             onChangeText={this._handlePassword}
           />
-          {/* <CheckBox
-          style={styles.checkBox}
-          value={this.state.checked}
-          title="Click Here"
-          onValueChange={this._handleCheckbox}
-        />
-        <Text style={styles.rememberMe}>{I18n.t('rememberMe')}</Text> */}
           <Button
             onPress={this._handleLogin}
             customContainer={styles.button}

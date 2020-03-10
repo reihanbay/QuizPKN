@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     height: scale(60)
   },
   pict: {
-    width: scale(120),
+    width: scale(100),
     height: scale(40),
     alignSelf: 'center',
     resizeMode: 'contain',
@@ -51,7 +51,13 @@ const styles = StyleSheet.create({
     marginBottom: scale(5)
   },
   self: {
-    fontSize: 18,
+    marginBottom: scale(0),
+    fontSize: 15,
+    color: COLOR_WHITE
+  },
+  mail: {
+    marginBottom: scale(0),
+    fontSize: 13,
     color: COLOR_WHITE
   },
   text: {

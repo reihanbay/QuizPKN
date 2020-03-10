@@ -38,12 +38,31 @@ const styles = StyleSheet.create({
     backgroundColor: COLOR_BASE_PRIMARY_MAIN
   },
   about: {
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: metrics.doubleBaseMargin,
     margin: 0,
     marginBottom: metrics.doubleBaseMargin,
     width: scale(300)
+  },
+  touchOut: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: scale(40),
+    width: scale(100),
+    borderRadius: 5,
+    margin: metrics.doubleBaseMargin,
+    backgroundColor: '#D95353'
+  },
+  touchMe: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: scale(40),
+    width: scale(100),
+    borderRadius: 5,
+    margin: metrics.doubleBaseMargin,
+    backgroundColor: '#4EC65A'
   },
   header: {
     alignSelf: 'center',

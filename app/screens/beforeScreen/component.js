@@ -20,10 +20,10 @@ export default class Component extends React.Component {
     this.props.navigation.navigate('Menu');
   };
   _onPressStart = () => {
-    if (this.props.quizFinish) {
+    if (this.props.quizFinish === true) {
       this.props.navigation.navigate('QuizScreen');
     }
-    if (this.props.examFinish) {
+    if (this.props.examFinish === true) {
       this.props.navigation.navigate('ExamScreen');
     }
   };
@@ -92,7 +92,7 @@ export default class Component extends React.Component {
               width: scale(300),
               height: scale(50),
               margin: metrics.baseMargin,
-              backgroundColor: '#FCA82F',
+              backgroundColor: '#D95353',
               borderRadius: 5
             }}
           >

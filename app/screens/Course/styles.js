@@ -58,28 +58,76 @@ const styles = StyleSheet.create({
     height: scale(40)
   },
   me: {
-    backgroundColor: '#D95353'
-    // elevation: 1.0
+    backgroundColor: '#D95353',
+    shadowColor: '#D95353',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 5
   },
   ji: {
-    backgroundColor: '#D87D4A'
-    // elevation: 1.0
+    backgroundColor: '#D87D4A',
+    shadowColor: '#D87D4A',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 10
   },
   ku: {
-    backgroundColor: '#E1D036'
-    // elevation: 1.0
+    backgroundColor: '#E1D036',
+    shadowColor: '#E1D036',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 10
   },
   hi: {
-    backgroundColor: '#4EC65A'
-    // elevation: 1.0
+    backgroundColor: '#4EC65A',
+    shadowColor: '#4EC65A',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 10
   },
   bi: {
-    backgroundColor: '#4ABED8'
-    // elevation: 1.0
+    backgroundColor: '#4ABED8',
+    shadowColor: '#4ABED8',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 10
   },
   ni: {
-    backgroundColor: '#5764D6'
-    // elevation: 1.0
+    backgroundColor: '#5764D6',
+    shadowColor: '#5764D6',
+    shadowOffset: {
+      width: 0,
+      height: 1
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 7.0,
+
+    elevation: 10
   }
 });
 

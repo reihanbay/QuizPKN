@@ -6,6 +6,7 @@ import QuizScreen from '../screens/QuizScreen';
 import beforeScreen from '../screens/beforeScreen';
 import ExamScreen from '../screens/ExamScreen';
 import ExamResult from '../screens/ExamResult';
+import SessionScreen from '../screens/sessionScreen';
 import Login from '../screens/Login';
 import materi1 from '../screens/materi1';
 import materi2 from '../screens/materi2';
@@ -18,8 +19,6 @@ import Course from '../screens/Course';
 import SignIn from '../screens/SignIn';
 import About from '../screens/About';
 import Register from '../screens/Register';
-import History from '../screens/History';
-import Account from '../screens/Account';
 import OnBoarding from '../screens/OnBoarding';
 
 export const HomeStack = StackNavigator(
@@ -45,10 +44,16 @@ export const SearchStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-export const LoginStack = StackNavigator(
+export const LogResStack = StackNavigator(
   {
     Login: {
       screen: Login,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    },
+    Register: {
+      screen: Register,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -75,8 +80,26 @@ export const QuizStack = StackNavigator(
         tabBarVisible: true
       }
     },
-    beforeScreen:{
-      screen: beforeScreen,
+    ExamScreen:{
+      screen: ExamScreen,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    },
+    ExamResult:{
+      screen: ExamResult,
+      navigationOptions: {
+        tabBarVisible: true
+      }
+    }
+  },
+  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+
+export const SplashStack = StackNavigator(
+  {
+    SplashScreen:{
+      screen: SplashScreen,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -95,29 +118,12 @@ export const beforeStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-export const ExamStack = StackNavigator(
+export const SessionStack = StackNavigator(
   {
-    ExamScreen:{
-      screen: ExamScreen,
+    SessionScreen:{
+      screen: SessionScreen,
       navigationOptions: {
-        tabBarVisible: true
-      }
-    },
-    ExamResult:{
-      screen: ExamResult,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-export const SplashStack = StackNavigator(
-  {
-    SplashScreen:{
-      screen: SplashScreen,
-      navigationOptions: {
-        tabBarVisible: true
+        tabBarVisible: false
       }
     }
   },
@@ -131,6 +137,24 @@ export const MenuStack = StackNavigator(
         tabBarVisible: true
       }
     },
+    Course: {
+      screen: Course,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    About: {
+        screen: About,
+        navigationOptions: {
+          tabBarVisible: true
+        }
+      }
+    },
+    { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+
+export const CourseStack = StackNavigator(
+  {
     Course: {
       screen: Course,
       navigationOptions: {
@@ -173,48 +197,6 @@ export const MenuStack = StackNavigator(
         tabBarVisible: false
       }
     },
-      About: {
-        screen: About,
-        navigationOptions: {
-          tabBarVisible: true
-        }
-      }
-    },
-    { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-
-export const RegiStack = StackNavigator(
-  {
-    Register: {
-      screen: Register,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-
-export const HistoryStack = StackNavigator(
-  {
-    History: {
-      screen: History,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-
-export const AccountStack = StackNavigator(
-  {
-    Account: {
-      screen: Account,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );

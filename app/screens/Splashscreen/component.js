@@ -1,19 +1,22 @@
 import React from 'react';
 import { Text, View, Image, StatusBar, ImageBackground } from 'react-native';
-
 import styles from './styles';
 import images from '../../configs/images';
 // eslint-disable-next-line import/first
 import PropTypes from 'prop-types';
+import storage from '../../utils/storage';
+import STORAGE_KEY from '../../constants/storageKey';
 
 export default class Component extends React.Component {
   async componentDidMount() {
     const data = await this.performTimeConsumingTask();
+    const auth = await storage.get(STORAGE_KEY.TOKEN_LOGIN);
 
     StatusBar.setHidden(true);
-
-    if (data !== null) {
+    if (data !== null && JSON.stringify(auth) === JSON.stringify({})) {
       this.props.navigation.navigate('Login');
+    } else {
+      this.props.navigation.navigate('Menu');
     }
   }
 
