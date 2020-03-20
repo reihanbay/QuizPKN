@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/sort-comp */

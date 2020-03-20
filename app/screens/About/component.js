@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react-native/no-color-literals */
 import React from 'react';
 import { Image, View, Text, ScrollView, ImageBackground, TouchableOpacity, Linking } from 'react-native';
@@ -9,7 +10,6 @@ import I18n from '../../i18n';
 import StatusBar from '../../components/elements/StatusBar';
 import images from '../../configs/images';
 // import { ENDPOINT } from '../../configs';
-console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {

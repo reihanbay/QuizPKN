@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { ImageBackground, ScrollView, Text, View } from 'react-native';
 import MainScreen from '../../components/layouts/MainScreen';

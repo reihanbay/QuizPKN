@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable consistent-return */
 import React from 'react';
 import { StatusBar, View, Text, ImageBackground } from 'react-native';

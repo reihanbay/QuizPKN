@@ -1,12 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-import {
-  COLOR_BASE_PRIMARY_LIGHT,
-  COLOR_BASE_PRIMARY_DARK,
-  COLOR_FONT_PRIMARY_LIGHT,
-  COLOR_WHITE,
-  COLOR_GREY
-} from '../../../styles';
 import { scale } from '../../../utils/scaling';
 
 const container = {};

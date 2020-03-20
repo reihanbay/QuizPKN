@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable import/first */
 import React from 'react';
 import { ScrollView, Text, View, ImageBackground } from 'react-native';

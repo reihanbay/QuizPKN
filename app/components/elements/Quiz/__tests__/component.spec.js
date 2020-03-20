@@ -1,4 +1,4 @@
-import { assertSnapshots } from '../../../utils/TestUtils/snapshot';
+import { assertSnapshots } from '../../../../utils/TestUtils/snapshot';
 import Component from '../component';
 
 jest.mock('../../../components/layouts/MainScreen', () => 'MainScreen');

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/sort-comp */
 /* eslint-disable react/no-unescaped-entities */

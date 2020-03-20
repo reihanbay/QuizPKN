@@ -6,7 +6,6 @@ import {
   FONT_PLACEHOLDER_PRIMARY,
   FONT_LABEL2_PRIMARY,
   COLOR_EVENT_ERROR,
-  COLOR_LINE,
   COLOR_WHITE
 } from '../../../styles';
 import { verticalScale, scale } from '../../../utils/scaling';

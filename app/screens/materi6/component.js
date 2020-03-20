@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/jsx-boolean-value */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable no-return-assign */

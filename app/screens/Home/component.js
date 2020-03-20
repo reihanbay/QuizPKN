@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { View, Text, Image, Alert } from 'react-native';
 import PropTypes from 'prop-types';

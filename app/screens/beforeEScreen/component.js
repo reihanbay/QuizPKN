@@ -9,8 +9,6 @@ import styles from './styles';
 import { scale } from '../../utils/scaling';
 import metrics from '../../constants/metrics';
 
-console.disableYellowBox = true;
-
 export default class Component extends React.Component {
   constructor(props) {
     super(props);

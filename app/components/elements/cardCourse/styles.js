@@ -1,12 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import {
-  COLOR_BASE_PRIMARY_MAIN,
-  COLOR_BASE_PRIMARY_LIGHT,
-  COLOR_BASE_PRIMARY_DARK,
-  COLOR_FONT_PRIMARY_LIGHT,
-  COLOR_WHITE
-} from '../../../styles';
+import { COLOR_WHITE } from '../../../styles';
 import { scale } from '../../../utils/scaling';
 import metrics from '../../../constants/metrics';
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { Image, Text, ToastAndroid, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
