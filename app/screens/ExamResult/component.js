@@ -1,49 +1,61 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable react/no-did-update-set-state */
 /* eslint-disable react/sort-comp */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable consistent-return */
 import React from 'react';
-import { View, Text, ImageBackground } from 'react-native';
+import { View, Text, ImageBackground, ToastAndroid } from 'react-native';
 import PropTypes from 'prop-types';
+import Axios from 'axios';
 import { Container, Content } from 'native-base';
 import MainScreen from '../../components/layouts/MainScreen';
 import { IMAGES } from '../../configs';
 import Animbutton from '../../components/elements/BtnAnimate';
-import Button from '../../components/elements/btnQuiz';
 import ButtonText from '../../components/elements/btnText';
-import { quizData } from '../../data/jsonExam';
+import Button from '../../components/elements/btnQuiz';
 import styles from './styles';
 import { scale } from '../../utils/scaling';
+import Loading from '../../components/elements/Loading';
+
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
     this.score = 0;
     this.state = {
+      loading: true,
       currentQuestion: 0, // id penomoran soal//
       myAnswer: null,
-      options: [],
       disabled: true
+      // data: []
     };
   }
-  loadQuizData = () => {
-    console.log(quizData[0].question);
-    this.setState(() => ({
-      questions: quizData[this.state.currentQuestion].question,
-      answer: quizData[this.state.currentQuestion].answer,
-      options: quizData[this.state.currentQuestion].options,
-      bahas: quizData[this.state.currentQuestion].bahas
-    }));
-  };
 
   componentDidMount() {
     this.loadQuizData();
   }
-  nextQuestionHandler = () => {
-    // console.log('test')
-    const { myAnswer, answer } = this.state;
 
-    if (myAnswer === answer) {
+  loadQuizData = () => {
+    Axios.get('http://3.84.200.157/api/latihan')
+      .then(res => {
+        this.setState({
+          data: res.data.data,
+          loading: false
+        });
+      })
+      .catch(err => {
+        this.setState({
+          data: err.response
+        });
+        ToastAndroid.show('Network Error', ToastAndroid.SHORT);
+      });
+  };
+
+  nextQuestionHandler = () => {
+    const { myAnswer, currentQuestion, data } = this.state;
+
+    if (myAnswer === data[currentQuestion].answer) {
       this.score += 1;
     }
     this.setState({
@@ -51,53 +63,92 @@ export default class Component extends React.Component {
     });
     console.log(this.state.currentQuestion);
   };
-
   backQuestionHandler = () => {
-    // console.log('test')
-    // const { myAnswer, answer } = this.state;
-
-    // // if (myAnswer === answer) {
-    // //   this.score += 1;
-    // // }
     this.setState({
       currentQuestion: this.state.currentQuestion - 1
     });
     console.log(this.state.currentQuestion);
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.currentQuestion !== prevState.currentQuestion) {
-      this.setState(() => ({
-        disabled: true,
-        questions: quizData[this.state.currentQuestion].question,
-        options: quizData[this.state.currentQuestion].options,
-        answer: quizData[this.state.currentQuestion].answer,
-        bahas: quizData[this.state.currentQuestion].bahas
-      }));
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (this.state.currentQuestion !== prevState.currentQuestion) {
+  //     this.setState(() => ({
+  //       disabled: true,
+  //       questions: quizData[this.state.currentQuestion].question,
+  //       options: quizData[this.state.currentQuestion].options,
+  //       answer: quizData[this.state.currentQuestion].answer,
+  //       bahas: quizData[this.state.currentQuestion].bahas
+  //     }));
+  //   }
+  // }
   // check answer
   checkAnswer = answer => {
     this.setState({ myAnswer: answer, disabled: false });
   };
   finishHandler = () => {
-    if (this.state.currentQuestion === quizData.length - 1) {
+    const data = this.state;
+    if (this.state.currentQuestion === data.length - 1) {
       this.props.navigation.navigate('Menu');
     }
   };
+  operation = () => {
+    const { currentQuestion, data } = this.state;
+    if (currentQuestion === 0) {
+      return (
+        <View style={styles.btn}>
+          <Button
+            next
+            nextBtn
+            customContainer={styles.next}
+            disabled={this.state.disabled}
+            onPress={this.nextQuestionHandler}
+          />
+        </View>
+      );
+    } else if (currentQuestion < data.length - 1) {
+      return (
+        <View style={styles.btn}>
+          <Button back backBtn customContainer={styles.back} onPress={this.backQuestionHandler} />
+          <Button
+            next
+            nextBtn
+            customContainer={styles.next}
+            disabled={this.state.disabled}
+            onPress={this.nextQuestionHandler}
+          />
+        </View>
+      );
+    } else if (currentQuestion === data.length - 1) {
+      return (
+        <View style={styles.btn}>
+          <Button back backBtn customContainer={styles.back} onPress={this.backQuestionHandler} />
+          <ButtonText
+            text="Selesai"
+            customContainer={styles.next}
+            disabled={this.state.disabled}
+            onPress={this.props.navigation.navigate('Menu')}
+          />
+        </View>
+      );
+    }
+  };
   render() {
-    const { options, myAnswer, currentQuestion, bahas } = this.state;
-    return (
+    const { loading, myAnswer, currentQuestion, data } = this.state;
+    return loading ? (
+      <MainScreen style={{ justifyContent: 'center', alignitems: 'center' }}>
+        <Loading />
+      </MainScreen>
+    ) : (
       <MainScreen>
         <Container>
           <ImageBackground source={IMAGES.bg.quiz} style={styles.bg}>
             <Content style={styles.Container}>
               <View className="App">
                 <View style={styles.questContainer}>
-                  <Text style={styles.quest}>{this.state.questions}</Text>
+                  <Text style={styles.quest}>{data[currentQuestion].question}</Text>
                 </View>
                 {/* <Text>{`Questions ${currentQuestion}  out of ${quizData.length - 1} remaining `}</Text> */}
-                {options.map(option => (
+                {data[currentQuestion].options.map(option => (
                   <View key={option.id} style={{ margin: 10 }}>
                     <Animbutton
                       countCheck={this.state.countCheck}
@@ -113,7 +164,7 @@ export default class Component extends React.Component {
                         borderWidth: 2,
                         lineHeight: 40,
                         borderColor: 'white',
-                        backgroundColor: myAnswer === bahas ? '#FCA82F' : '#FCA82F',
+                        backgroundColor: myAnswer === data[currentQuestion].answer ? '#FCA82F' : null,
                         borderRadius: 10
                       }}
                       onPress={() => this.checkAnswer(option)}
@@ -123,32 +174,9 @@ export default class Component extends React.Component {
                 ))}
                 <View style={styles.bahas}>
                   <Text style={styles.titlePembahasan}>Pembahasan :</Text>
-
-                  <Text style={styles.pembahasan}>{this.state.bahas}</Text>
+                  <Text style={styles.pembahasan}>{data[currentQuestion].bahas}</Text>
                 </View>
-                {currentQuestion < quizData.length - 1 && (
-                  <View style={styles.btn}>
-                    <Button back backBtn customContainer={styles.back} onPress={this.backQuestionHandler} />
-                    <Button
-                      next
-                      nextBtn
-                      customContainer={styles.next}
-                      disabled={this.state.disabled}
-                      onPress={this.nextQuestionHandler}
-                    />
-                  </View>
-                )}
-                {currentQuestion === quizData.length - 1 && (
-                  <View style={styles.btn}>
-                    <Button back backBtn customContainer={styles.back} onPress={this.backQuestionHandler} />
-                    <ButtonText
-                      text="Selesai"
-                      customContainer={styles.next}
-                      disabled={this.state.disabled}
-                      onPress={this.finishHandler}
-                    />
-                  </View>
-                )}
+                {this.operation()}
               </View>
             </Content>
           </ImageBackground>

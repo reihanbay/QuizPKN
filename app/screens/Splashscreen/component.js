@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { Text, View, Image, StatusBar, ImageBackground } from 'react-native';
 import styles from './styles';
@@ -7,6 +8,7 @@ import PropTypes from 'prop-types';
 import storage from '../../utils/storage';
 import STORAGE_KEY from '../../constants/storageKey';
 
+console.disableYellowBox = true;
 export default class Component extends React.Component {
   async componentDidMount() {
     const data = await this.performTimeConsumingTask();
@@ -31,9 +33,9 @@ export default class Component extends React.Component {
       <ImageBackground source={images.bg.menu} style={styles.bg}>
         <View style={styles.mainContainer}>
           <View style={styles.logoContainer}>
-            <Image source={images.ic} resizeMode="contain" style={styles.logo} />
+            <Image source={images.app} resizeMode="contain" style={styles.logo} />
           </View>
-          <Text style={styles.appVersion}>E-Learn</Text>
+          <Text style={styles.appVersion}>E-HAM</Text>
         </View>
       </ImageBackground>
     );

@@ -12,6 +12,7 @@ import Button from '../../components/elements/Button';
 import { ENDPOINT } from '../../configs';
 // import { STORAGE_KEY } from '../../constants';
 // import storage from '../../utils/storage';
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {

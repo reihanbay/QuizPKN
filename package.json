@@ -1,5 +1,5 @@
 {
-  "name": "component",
+  "name": "EHAM",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "react-native-vector-icons": "^6.6.0",
     "react-native-video": "^5.0.2",
     "react-native-video-player": "^0.10.0",
+    "react-native-webview": "^8.2.0",
     "react-navigation": "^1.5.8",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",

@@ -1,9 +1,8 @@
 import { SwitchNavigator } from 'react-navigation';
-import { OnBoardingStack, LogResStack , CourseStack , MenuStack , SplashStack, QuizStack, beforeStack } from './stackNavigator';
+import { LogResStack , CourseStack , MenuStack , SplashStack, QuizStack, ExamStack, beforeQStack, beforeEStack } from './stackNavigator';
 
 export default SwitchNavigator(
   {
-    OnBoarding: OnBoardingStack,
     Login:LogResStack,
     Register:LogResStack,
     // App: Drawer,
@@ -17,9 +16,10 @@ export default SwitchNavigator(
     materi5: CourseStack,
     materi6: CourseStack,
     QuizScreen: QuizStack,
-    beforeScreen: beforeStack,
-    ExamScreen: QuizStack,
-    ExamResult: QuizStack,
+    beforeEScreen: beforeEStack,
+    beforeQScreen: beforeQStack,
+    ExamScreen: ExamStack,
+    ExamResult: ExamStack,
     Splash: SplashStack
 
 

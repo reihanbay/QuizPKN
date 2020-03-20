@@ -35,7 +35,7 @@ INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidM
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
 INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:1:1-29:12
 	package
-		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:2:5-28
+		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:2:5-32
 		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -94,7 +94,7 @@ MERGED from [org.webkit:android-jsc:r174650] C:\Users\TOSHIBA\.gradle\caches\tra
 		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:15:7-38
 	android:name
 		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:11:7-38
-activity#com.component.MainActivity
+activity#com.codebase.eham.MainActivity
 ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:16:7-25:18
 	android:label
 		ADDED from D:\File\jajal\codebase-mobile-master\android\app\src\main\AndroidManifest.xml:18:9-41

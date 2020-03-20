@@ -6,7 +6,7 @@ const container = {
   width: 140,
   height: 50,
   justifyContent: 'center',
-  borderRadius: 5
+  borderRadius: 10
 };
 
 export default StyleSheet.create({

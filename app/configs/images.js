@@ -7,6 +7,7 @@ const images = {
     subMateri: require('../../assets/images/subMateri.png'),
     quiz: require('../../assets/images/quiz.png')
   },
+  app: require('../../assets/images/app.png'),
   smk: require('../../assets/images/smk.png'),
   splash: require('../../assets/images/splash.gif'),
   pic1: require('../../assets/images/pic1.png'),

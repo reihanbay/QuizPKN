@@ -10,6 +10,10 @@ const styles = StyleSheet.create({
     marginVertical: metrics.baseMargin
     // elevation: 1.0
   },
+  WebViewStyle: {
+    marginTop: 10,
+    marginBottom: 20
+  },
   container: {
     backgroundColor: COLOR_WHITE
   },

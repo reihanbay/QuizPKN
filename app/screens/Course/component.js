@@ -11,6 +11,7 @@ import Header from '../../components/elements/Header';
 import StatusBar from '../../components/elements/StatusBar';
 import Button from '../../components/elements/BtnMulti';
 // import { ENDPOINT } from '../../configs';
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {

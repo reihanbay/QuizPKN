@@ -5,43 +5,55 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
+import Axios from 'axios';
 import { Container, Content } from 'native-base';
 import MainScreen from '../../layouts/MainScreen';
 import { IMAGES } from '../../../configs';
 import Animbutton from '../../elements/BtnAnimate';
 import Button from '../../elements/btnQuiz';
-import { quizData } from '../../../data/jsonExam';
 import styles from './styles';
 import { scale } from '../../../utils/scaling';
+import Loading from '../../elements/Loading';
+
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
     this.score = 0;
     this.state = {
+      loading: true,
       currentQuestion: 0, // id penomoran soal//
       myAnswer: null,
-      options: [],
       disabled: true
+      // data: []
     };
   }
-  loadQuizData = () => {
-    console.log(quizData[0].question);
-    this.setState(() => ({
-      questions: quizData[this.state.currentQuestion].question,
-      answer: quizData[this.state.currentQuestion].answer,
-      options: quizData[this.state.currentQuestion].options
-    }));
-  };
 
   componentDidMount() {
     this.loadQuizData();
   }
-  nextQuestionHandler = () => {
-    // console.log('test')
-    const { myAnswer, answer } = this.state;
 
-    if (myAnswer === answer) {
+  loadQuizData = () => {
+    Axios.get('http://3.84.200.157/api/latihan')
+      .then(res => {
+        this.setState({
+          data: res.data.data,
+          loading: false
+        });
+      })
+      .catch(err => {
+        this.setState({
+          data: err.response,
+          loading: false
+        });
+      });
+  };
+
+  nextQuestionHandler = () => {
+    const { myAnswer, currentQuestion, data } = this.state;
+
+    if (myAnswer === data[currentQuestion].answer) {
       this.score += 1;
     }
     this.setState({
@@ -50,38 +62,42 @@ export default class Component extends React.Component {
     console.log(this.state.currentQuestion);
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.currentQuestion !== prevState.currentQuestion) {
-      this.setState(() => ({
-        disabled: true,
-        questions: quizData[this.state.currentQuestion].question,
-        options: quizData[this.state.currentQuestion].options,
-        answer: quizData[this.state.currentQuestion].answer
-      }));
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (this.state.currentQuestion !== prevState.currentQuestion) {
+  //     this.setState(() => ({
+  //       disabled: true,
+  //       questions: quizData[this.state.currentQuestion].question,
+  //       options: quizData[this.state.currentQuestion].options,
+  //       answer: quizData[this.state.currentQuestion].answer
+  //     }));
+  //   }
+  // }
   // check answer
   checkAnswer = answer => {
     this.setState({ myAnswer: answer, disabled: false });
   };
   finishHandler = () => {
-    if (this.state.currentQuestion === quizData.length - 1) {
+    if (this.state.currentQuestion === this.state.data.length - 1) {
       this.props.examFinish(this.score * 10);
     }
   };
   render() {
-    const { options, myAnswer, currentQuestion } = this.state;
-    return (
+    const { loading, myAnswer, currentQuestion, data } = this.state;
+    return loading ? (
+      <MainScreen style={{ justifyContent: 'center', alignitems: 'center' }}>
+        <Loading />
+      </MainScreen>
+    ) : (
       <MainScreen>
         <Container>
           <ImageBackground source={IMAGES.bg.quiz} style={styles.bg}>
             <Content style={styles.Container}>
               <View className="App">
                 <View style={styles.questContainer}>
-                  <Text style={styles.quest}>{this.state.questions}</Text>
+                  <Text style={styles.quest}>{data[currentQuestion].question}</Text>
                 </View>
                 {/* <Text>{`Questions ${currentQuestion}  out of ${quizData.length - 1} remaining `}</Text> */}
-                {options.map(option => (
+                {data[currentQuestion].options.map(option => (
                   <View key={option.id} style={{ margin: 10 }}>
                     <Animbutton
                       countCheck={this.state.countCheck}
@@ -105,7 +121,7 @@ export default class Component extends React.Component {
                     />
                   </View>
                 ))}
-                {currentQuestion < quizData.length - 1 && (
+                {currentQuestion < data.length - 1 && (
                   <View style={styles.btn}>
                     <Button
                       next
@@ -116,9 +132,8 @@ export default class Component extends React.Component {
                     />
                   </View>
                 )}
-                {currentQuestion === quizData.length - 1 && (
+                {currentQuestion === data.length - 1 && (
                   <View style={styles.btn}>
-                    {/* <Button back backBtn customContainer={styles.back} onPress={() => this.prev()} /> */}
                     <Button
                       next
                       nextBtn

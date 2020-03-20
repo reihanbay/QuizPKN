@@ -12,6 +12,10 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: COLOR_WHITE
   },
+  WebViewStyle: {
+    marginTop: 10,
+    marginBottom: 20
+  },
   containerText: {
     alignSelf: 'center',
     marginHorizontal: metrics.doubleBaseMargin

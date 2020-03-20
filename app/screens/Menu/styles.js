@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   header: {
     alignSelf: 'center',
-    marginTop: metrics.baseMargin
+    marginTop: metrics.doubleBaseMargin
   },
   headerText: {
     fontSize: 22,

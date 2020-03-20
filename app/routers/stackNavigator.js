@@ -1,9 +1,8 @@
 import { StackNavigator } from 'react-navigation';
-import Home from '../screens/Home';
-import Search from '../screens/Search';
 import Menu from '../screens/Menu';
 import QuizScreen from '../screens/QuizScreen';
-import beforeScreen from '../screens/beforeScreen';
+import beforeEScreen from '../screens/beforeEScreen';
+import beforeQScreen from '../screens/beforeQScreen';
 import ExamScreen from '../screens/ExamScreen';
 import ExamResult from '../screens/ExamResult';
 import SessionScreen from '../screens/sessionScreen';
@@ -16,27 +15,14 @@ import materi5 from '../screens/materi5';
 import materi6 from '../screens/materi6';
 import SplashScreen from '../screens/Splashscreen';
 import Course from '../screens/Course';
-import SignIn from '../screens/SignIn';
 import About from '../screens/About';
 import Register from '../screens/Register';
-import OnBoarding from '../screens/OnBoarding';
+import Home from '../screens/Home';
 
 export const HomeStack = StackNavigator(
   {
     Home: {
       screen: Home,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-
-export const SearchStack = StackNavigator(
-  {
-    Search: {
-      screen: Search,
       navigationOptions: {
         tabBarVisible: true
       }
@@ -61,25 +47,8 @@ export const LogResStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-export const SignInStack = StackNavigator(
+export const ExamStack = StackNavigator(
   {
-    SignIn: {
-      screen: SignIn,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    }
-  },
-  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
-);
-export const QuizStack = StackNavigator(
-  {
-    QuizScreen:{
-      screen: QuizScreen,
-      navigationOptions: {
-        tabBarVisible: true
-      }
-    },
     ExamScreen:{
       screen: ExamScreen,
       navigationOptions: {
@@ -107,12 +76,23 @@ export const SplashStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-export const beforeStack = StackNavigator(
+export const beforeEStack = StackNavigator(
   {
-    beforeScreen:{
-      screen: beforeScreen,
+    beforeEScreen:{
+      screen: beforeEScreen,
       navigationOptions: {
-        tabBarVisible: true
+        tabBarVisible: false
+      }
+    }
+  },
+  { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
+);
+export const beforeQStack = StackNavigator(
+  {
+    beforeQScreen:{
+      screen: beforeQScreen,
+      navigationOptions: {
+        tabBarVisible: false
       }
     }
   },
@@ -139,6 +119,42 @@ export const MenuStack = StackNavigator(
     },
     Course: {
       screen: Course,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi1: {
+      screen: materi1,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi2: {
+      screen: materi2,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi3: {
+      screen: materi3,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi4: {
+      screen: materi4,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi5: {
+      screen: materi5,
+      navigationOptions: {
+        tabBarVisible: false
+      }
+    },
+    materi6: {
+      screen: materi6,
       navigationOptions: {
         tabBarVisible: false
       }
@@ -200,15 +216,14 @@ export const CourseStack = StackNavigator(
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );
-
-export const OnBoardingStack = StackNavigator(
+export const QuizStack = StackNavigator(
   {
-    OnBoarding: {
-      screen: OnBoarding,
+    QuizScreen:{
+      screen: QuizScreen,
       navigationOptions: {
         tabBarVisible: false
       }
-    }
+    },
   },
   { headerMode: 'none', navigationOptions: { tabBarVisible: false } }
 );

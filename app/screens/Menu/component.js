@@ -9,12 +9,12 @@ import styles from './styles';
 import images from '../../configs/images';
 import I18n from '../../i18n';
 import Loading from '../../components/elements/Loading';
-import Start from '../beforeScreen';
+// import Start from '../beforeScreen';
 import Button from '../../components/elements/BtnMulti';
 import { STORAGE_KEY } from '../../constants';
 import storage from '../../utils/storage';
-// import { COLOR_WHITE } from '../../styles';
-// import { ENDPOINT } from '../../configs';
+
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {
@@ -35,10 +35,10 @@ export default class Component extends React.Component {
     this.props.navigation.navigate('Login');
   };
   _handleExam = async () => {
-    this.props.navigation.navigate('beforeScreen', <Start quizFinish />);
+    this.props.navigation.navigate('beforeEScreen');
   };
   _handleQuiz = async () => {
-    this.props.navigation.navigate('beforeScreen', <Start examFinish />);
+    this.props.navigation.navigate('beforeQScreen');
   };
   _handleAbout = async () => {
     this.props.navigation.navigate('About');
@@ -47,6 +47,7 @@ export default class Component extends React.Component {
   _name = async () => {
     this.setState({ isLoading: true });
     const token = await storage.get(STORAGE_KEY.TOKEN_LOGIN);
+
     console.log('ini token', token);
 
     axios
@@ -56,9 +57,10 @@ export default class Component extends React.Component {
         }
       })
       .then(result => {
+        this.setState(storage.get(STORAGE_KEY.TOKEN_LOGIN, result.data.fullname));
         console.log('ini response', result.data);
         this.setState({
-          name: result.data.username,
+          name: result.data.fullname,
           isLoading: false
         });
       })
@@ -81,9 +83,7 @@ export default class Component extends React.Component {
           <Content>
             <ImageBackground source={images.bg.menu} style={styles.bg}>
               <View style={styles.header}>
-                <Text style={styles.headerText1}>
-                  Halo {this.state.name} {I18n.t('guest')},
-                </Text>
+                <Text style={styles.headerText1}>Halo... {this.state.name}</Text>
                 <Text style={styles.headerText2}>Ayo Mulai Belajar HAM</Text>
               </View>
               <Image source={images.logo} style={styles.logo} />

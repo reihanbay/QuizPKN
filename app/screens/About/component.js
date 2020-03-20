@@ -9,6 +9,7 @@ import I18n from '../../i18n';
 import StatusBar from '../../components/elements/StatusBar';
 import images from '../../configs/images';
 // import { ENDPOINT } from '../../configs';
+console.disableYellowBox = true;
 
 export default class Component extends React.Component {
   constructor(props) {

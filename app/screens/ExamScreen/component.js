@@ -8,6 +8,8 @@ import ButtonText from '../../components/elements/btnText';
 import IMAGES from '../../configs/images';
 import styles from './styles';
 
+console.disableYellowBox = true;
+
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
@@ -43,7 +45,7 @@ export default class Component extends React.Component {
     if (score <= 30) {
       return (
         <View style={styles.innerContainer}>
-          <Text style={styles.header}>Congratulations!</Text>
+          <Text style={styles.header}>You Must Study Very Hard!</Text>
           <View style={{ flexDirection: 'row' }}>
             <Icon name="trophy" size={40} color="#FCA82F" />
           </View>
@@ -55,7 +57,7 @@ export default class Component extends React.Component {
     } else if (score > 30 && score < 60) {
       return (
         <View style={styles.innerContainer}>
-          <Text style={styles.header}>Congratulations!</Text>
+          <Text style={styles.header}>You Must Study Hard!</Text>
           <View style={{ flexDirection: 'row' }}>
             <Icon name="trophy" size={40} color="#FCA82F" />
             <Icon name="trophy" size={40} color="#FCA82F" />
